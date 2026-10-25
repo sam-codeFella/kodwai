@@ -1,0 +1,43 @@
+{
+  "partners": {
+    "acme": {
+      "file_glob": "{partner}/{partner}_{date}*.csv",
+      "timezone": "UTC",
+      "fields": {
+        "order_id": ["order_id"],
+        "customer_email": ["email", "customerEmail"],
+        "amount": [
+          {"column": "amount", "parser": "decimal_major"},
+          {"column": "amount_cents", "parser": "minor_int"}
+        ],
+        "currency": ["currency"],
+        "placed_at": [{"column": "placed_at", "parser": "iso8601"}]
+      }
+    },
+    "bolt": {
+      "file_glob": "{partner}/{partner}_{date}*.csv",
+      "timezone": "UTC",
+      "fields": {
+        "order_id": ["OrderId"],
+        "customer_email": ["customer_email"],
+        "amount": [
+          {"column": "total", "parser": "decimal_major"},
+          {"column": "total", "parser": "minor_int", "effective_from": "2026-01-05"}
+        ],
+        "currency": ["ccy"],
+        "placed_at": [{"column": "order_ts", "parser": "epoch_s"}]
+      }
+    },
+    "cobalt": {
+      "file_glob": "{partner}/{partner}_{date}*.csv",
+      "timezone": "UTC-05:00",
+      "fields": {
+        "order_id": ["id"],
+        "customer_email": ["buyer_email"],
+        "amount": [{"column": "price", "parser": "decimal_major"}],
+        "currency": ["currency"],
+        "placed_at": [{"column": "created", "parser": "datetime_fmt", "format": "%m/%d/%Y %H:%M"}]
+      }
+    }
+  }
+}

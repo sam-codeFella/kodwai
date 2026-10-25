@@ -1,0 +1,4740 @@
+{
+  "start": "2026-01-01",
+  "files": [
+    {
+      "partner": "acme",
+      "date": "2026-01-01",
+      "day": 1,
+      "file": "acme/acme_2026-01-01.csv",
+      "late": false,
+      "broken": false,
+      "good_rows": 28,
+      "bad_rows": 3,
+      "reject_reasons": {
+        "invalid_timestamp": 1,
+        "wrong_column_count": 1,
+        "negative_amount": 1
+      },
+      "columns": [
+        "order_id",
+        "email",
+        "amount",
+        "currency",
+        "placed_at"
+      ]
+    },
+    {
+      "partner": "bolt",
+      "date": "2026-01-01",
+      "day": 1,
+      "file": "bolt/bolt_2026-01-01.csv",
+      "late": false,
+      "broken": false,
+      "good_rows": 39,
+      "bad_rows": 3,
+      "reject_reasons": {
+        "negative_amount": 1,
+        "wrong_column_count": 1,
+        "invalid_email": 1
+      },
+      "columns": [
+        "OrderId",
+        "customer_email",
+        "total",
+        "ccy",
+        "order_ts"
+      ]
+    },
+    {
+      "partner": "cobalt",
+      "date": "2026-01-01",
+      "day": 1,
+      "file": "cobalt/cobalt_2026-01-01.csv",
+      "late": false,
+      "broken": false,
+      "good_rows": 34,
+      "bad_rows": 3,
+      "reject_reasons": {
+        "negative_amount": 1,
+        "invalid_amount": 1,
+        "invalid_email": 1
+      },
+      "columns": [
+        "id",
+        "buyer_email",
+        "price",
+        "currency",
+        "created"
+      ]
+    },
+    {
+      "partner": "acme",
+      "date": "2026-01-02",
+      "day": 2,
+      "file": "acme/acme_2026-01-02.csv",
+      "late": false,
+      "broken": false,
+      "good_rows": 40,
+      "bad_rows": 3,
+      "reject_reasons": {
+        "invalid_email": 1,
+        "wrong_column_count": 1,
+        "invalid_timestamp": 1
+      },
+      "columns": [
+        "order_id",
+        "email",
+        "amount",
+        "currency",
+        "placed_at"
+      ]
+    },
+    {
+      "partner": "bolt",
+      "date": "2026-01-02",
+      "day": 2,
+      "file": "bolt/bolt_2026-01-02.csv",
+      "late": false,
+      "broken": false,
+      "good_rows": 27,
+      "bad_rows": 3,
+      "reject_reasons": {
+        "missing_order_id": 1,
+        "invalid_timestamp": 1,
+        "negative_amount": 1
+      },
+      "columns": [
+        "OrderId",
+        "customer_email",
+        "total",
+        "ccy",
+        "order_ts"
+      ]
+    },
+    {
+      "partner": "cobalt",
+      "date": "2026-01-02",
+      "day": 2,
+      "file": "cobalt/cobalt_2026-01-02.csv",
+      "late": false,
+      "broken": false,
+      "good_rows": 42,
+      "bad_rows": 3,
+      "reject_reasons": {
+        "wrong_column_count": 1,
+        "invalid_timestamp": 1,
+        "invalid_email": 1
+      },
+      "columns": [
+        "id",
+        "buyer_email",
+        "price",
+        "currency",
+        "created"
+      ]
+    },
+    {
+      "partner": "acme",
+      "date": "2026-01-03",
+      "day": 3,
+      "file": "acme/acme_2026-01-03.csv",
+      "late": false,
+      "broken": false,
+      "good_rows": 41,
+      "bad_rows": 3,
+      "reject_reasons": {
+        "wrong_column_count": 1,
+        "invalid_timestamp": 1,
+        "invalid_amount": 1
+      },
+      "columns": [
+        "order_id",
+        "customerEmail",
+        "amount",
+        "currency",
+        "placed_at"
+      ]
+    },
+    {
+      "partner": "bolt",
+      "date": "2026-01-03",
+      "day": 3,
+      "file": "bolt/bolt_2026-01-03.csv",
+      "late": false,
+      "broken": false,
+      "good_rows": 28,
+      "bad_rows": 3,
+      "reject_reasons": {
+        "invalid_timestamp": 1,
+        "wrong_column_count": 1,
+        "missing_order_id": 1
+      },
+      "columns": [
+        "OrderId",
+        "customer_email",
+        "total",
+        "ccy",
+        "order_ts"
+      ]
+    },
+    {
+      "partner": "cobalt",
+      "date": "2026-01-03",
+      "day": 3,
+      "file": "cobalt/cobalt_2026-01-03.csv",
+      "late": false,
+      "broken": false,
+      "good_rows": 27,
+      "bad_rows": 3,
+      "reject_reasons": {
+        "invalid_amount": 1,
+        "missing_order_id": 1,
+        "invalid_email": 1
+      },
+      "columns": [
+        "id",
+        "buyer_email",
+        "price",
+        "currency",
+        "created"
+      ]
+    },
+    {
+      "partner": "acme",
+      "date": "2026-01-04",
+      "day": 4,
+      "file": "acme/acme_2026-01-04.csv",
+      "late": false,
+      "broken": false,
+      "good_rows": 36,
+      "bad_rows": 3,
+      "reject_reasons": {
+        "invalid_amount": 1,
+        "missing_order_id": 1,
+        "negative_amount": 1
+      },
+      "columns": [
+        "order_id",
+        "customerEmail",
+        "amount",
+        "currency",
+        "placed_at"
+      ]
+    },
+    {
+      "partner": "bolt",
+      "date": "2026-01-04",
+      "day": 4,
+      "file": "bolt/bolt_2026-01-04.csv",
+      "late": false,
+      "broken": false,
+      "good_rows": 41,
+      "bad_rows": 3,
+      "reject_reasons": {
+        "invalid_email": 1,
+        "invalid_timestamp": 1,
+        "wrong_column_count": 1
+      },
+      "columns": [
+        "OrderId",
+        "customer_email",
+        "total",
+        "ccy",
+        "order_ts"
+      ]
+    },
+    {
+      "partner": "cobalt",
+      "date": "2026-01-04",
+      "day": 4,
+      "file": "cobalt/cobalt_2026-01-04.csv",
+      "late": true,
+      "broken": false,
+      "good_rows": 42,
+      "bad_rows": 3,
+      "reject_reasons": {
+        "wrong_column_count": 1,
+        "invalid_timestamp": 1,
+        "invalid_amount": 1
+      },
+      "columns": [
+        "id",
+        "buyer_email",
+        "price",
+        "currency",
+        "created"
+      ]
+    },
+    {
+      "partner": "acme",
+      "date": "2026-01-05",
+      "day": 5,
+      "file": "acme/acme_2026-01-05.csv",
+      "late": false,
+      "broken": false,
+      "good_rows": 30,
+      "bad_rows": 3,
+      "reject_reasons": {
+        "invalid_timestamp": 1,
+        "wrong_column_count": 1,
+        "missing_order_id": 1
+      },
+      "columns": [
+        "order_id",
+        "customerEmail",
+        "amount_cents",
+        "currency",
+        "placed_at"
+      ]
+    },
+    {
+      "partner": "bolt",
+      "date": "2026-01-05",
+      "day": 5,
+      "file": "bolt/bolt_2026-01-05.csv",
+      "late": false,
+      "broken": false,
+      "good_rows": 41,
+      "bad_rows": 3,
+      "reject_reasons": {
+        "wrong_column_count": 1,
+        "invalid_timestamp": 1,
+        "invalid_amount": 1
+      },
+      "columns": [
+        "OrderId",
+        "customer_email",
+        "total",
+        "ccy",
+        "order_ts"
+      ]
+    },
+    {
+      "partner": "cobalt",
+      "date": "2026-01-05",
+      "day": 5,
+      "file": "cobalt/cobalt_2026-01-05.csv",
+      "late": false,
+      "broken": false,
+      "good_rows": 29,
+      "bad_rows": 3,
+      "reject_reasons": {
+        "wrong_column_count": 1,
+        "invalid_amount": 1,
+        "missing_order_id": 1
+      },
+      "columns": [
+        "id",
+        "buyer_email",
+        "price",
+        "currency",
+        "created"
+      ]
+    },
+    {
+      "partner": "acme",
+      "date": "2026-01-06",
+      "day": 6,
+      "file": "acme/acme_2026-01-06.csv",
+      "late": false,
+      "broken": false,
+      "good_rows": 34,
+      "bad_rows": 3,
+      "reject_reasons": {
+        "wrong_column_count": 1,
+        "negative_amount": 1,
+        "missing_order_id": 1
+      },
+      "columns": [
+        "order_id",
+        "customerEmail",
+        "amount_cents",
+        "currency",
+        "placed_at"
+      ]
+    },
+    {
+      "partner": "bolt",
+      "date": "2026-01-06",
+      "day": 6,
+      "file": "bolt/bolt_2026-01-06.csv",
+      "late": false,
+      "broken": false,
+      "good_rows": 40,
+      "bad_rows": 3,
+      "reject_reasons": {
+        "invalid_timestamp": 1,
+        "wrong_column_count": 1,
+        "negative_amount": 1
+      },
+      "columns": [
+        "OrderId",
+        "customer_email",
+        "total",
+        "ccy",
+        "order_ts",
+        "promo_code"
+      ]
+    },
+    {
+      "partner": "cobalt",
+      "date": "2026-01-06",
+      "day": 6,
+      "file": "cobalt/cobalt_2026-01-06.csv",
+      "late": false,
+      "broken": false,
+      "good_rows": 42,
+      "bad_rows": 3,
+      "reject_reasons": {
+        "wrong_column_count": 1,
+        "missing_order_id": 1,
+        "invalid_timestamp": 1
+      },
+      "columns": [
+        "id",
+        "buyer_email",
+        "price",
+        "currency",
+        "created",
+        "channel"
+      ]
+    },
+    {
+      "partner": "acme",
+      "date": "2026-01-07",
+      "day": 7,
+      "file": "acme/acme_2026-01-07.csv",
+      "late": false,
+      "broken": false,
+      "good_rows": 41,
+      "bad_rows": 3,
+      "reject_reasons": {
+        "negative_amount": 1,
+        "invalid_timestamp": 1,
+        "invalid_email": 1
+      },
+      "columns": [
+        "order_id",
+        "customerEmail",
+        "amount_cents",
+        "currency",
+        "placed_at"
+      ]
+    },
+    {
+      "partner": "bolt",
+      "date": "2026-01-07",
+      "day": 7,
+      "file": "bolt/bolt_2026-01-07.csv",
+      "late": false,
+      "broken": false,
+      "good_rows": 35,
+      "bad_rows": 3,
+      "reject_reasons": {
+        "wrong_column_count": 1,
+        "missing_order_id": 1,
+        "invalid_timestamp": 1
+      },
+      "columns": [
+        "OrderId",
+        "customer_email",
+        "total",
+        "ccy",
+        "order_ts",
+        "promo_code"
+      ]
+    },
+    {
+      "partner": "cobalt",
+      "date": "2026-01-07",
+      "day": 7,
+      "file": "cobalt/cobalt_2026-01-07.csv",
+      "late": false,
+      "broken": false,
+      "good_rows": 29,
+      "bad_rows": 3,
+      "reject_reasons": {
+        "invalid_amount": 1,
+        "missing_order_id": 1,
+        "invalid_email": 1
+      },
+      "columns": [
+        "id",
+        "buyer_email",
+        "price",
+        "currency",
+        "created",
+        "channel"
+      ]
+    }
+  ],
+  "expected_orders": {
+    "acme|AC-0101-0000": {
+      "customer_email": "dev143@example.com",
+      "amount_minor": 36548,
+      "currency": "USD",
+      "placed_at": "2026-01-01T10:10:00Z"
+    },
+    "acme|AC-0101-0001": {
+      "customer_email": "iris90@example.com",
+      "amount_minor": 89196,
+      "currency": "USD",
+      "placed_at": "2026-01-01T18:38:00Z"
+    },
+    "acme|AC-0101-0002": {
+      "customer_email": "ben224@example.com",
+      "amount_minor": 4665,
+      "currency": "EUR",
+      "placed_at": "2026-01-01T06:30:00Z"
+    },
+    "acme|AC-0101-0003": {
+      "customer_email": "ava575@example.com",
+      "amount_minor": 66737,
+      "currency": "USD",
+      "placed_at": "2026-01-01T16:16:00Z"
+    },
+    "acme|AC-0101-0004": {
+      "customer_email": "iris430@example.com",
+      "amount_minor": 85681,
+      "currency": "USD",
+      "placed_at": "2026-01-01T17:58:00Z"
+    },
+    "acme|AC-0101-0005": {
+      "customer_email": "ella829@example.com",
+      "amount_minor": 59378,
+      "currency": "USD",
+      "placed_at": "2026-01-01T16:03:00Z"
+    },
+    "acme|AC-0101-0006": {
+      "customer_email": "gia349@example.com",
+      "amount_minor": 21426,
+      "currency": "USD",
+      "placed_at": "2026-01-01T17:54:00Z"
+    },
+    "acme|AC-0101-0007": {
+      "customer_email": "finn105@example.com",
+      "amount_minor": 20879,
+      "currency": "EUR",
+      "placed_at": "2026-01-01T09:40:00Z"
+    },
+    "acme|AC-0101-0008": {
+      "customer_email": "finn868@example.com",
+      "amount_minor": 50297,
+      "currency": "USD",
+      "placed_at": "2026-01-01T07:39:00Z"
+    },
+    "acme|AC-0101-0009": {
+      "customer_email": "ava748@example.com",
+      "amount_minor": 79631,
+      "currency": "EUR",
+      "placed_at": "2026-01-01T10:30:00Z"
+    },
+    "acme|AC-0101-0010": {
+      "customer_email": "gia81@example.com",
+      "amount_minor": 70784,
+      "currency": "EUR",
+      "placed_at": "2026-01-01T08:07:00Z"
+    },
+    "acme|AC-0101-0011": {
+      "customer_email": "finn592@example.com",
+      "amount_minor": 82897,
+      "currency": "EUR",
+      "placed_at": "2026-01-01T16:33:00Z"
+    },
+    "acme|AC-0101-0012": {
+      "customer_email": "kai234@example.com",
+      "amount_minor": 10616,
+      "currency": "USD",
+      "placed_at": "2026-01-01T06:46:00Z"
+    },
+    "acme|AC-0101-0013": {
+      "customer_email": "dev888@example.com",
+      "amount_minor": 10958,
+      "currency": "EUR",
+      "placed_at": "2026-01-01T20:35:00Z"
+    },
+    "acme|AC-0101-0014": {
+      "customer_email": "hugo651@example.com",
+      "amount_minor": 50323,
+      "currency": "USD",
+      "placed_at": "2026-01-01T10:44:00Z"
+    },
+    "acme|AC-0101-0015": {
+      "customer_email": "finn215@example.com",
+      "amount_minor": 21819,
+      "currency": "EUR",
+      "placed_at": "2026-01-01T12:19:00Z"
+    },
+    "acme|AC-0101-0016": {
+      "customer_email": "jon651@example.com",
+      "amount_minor": 85439,
+      "currency": "EUR",
+      "placed_at": "2026-01-01T07:13:00Z"
+    },
+    "acme|AC-0101-0017": {
+      "customer_email": "dev168@example.com",
+      "amount_minor": 70510,
+      "currency": "USD",
+      "placed_at": "2026-01-01T18:26:00Z"
+    },
+    "acme|AC-0101-0018": {
+      "customer_email": "kai705@example.com",
+      "amount_minor": 51235,
+      "currency": "EUR",
+      "placed_at": "2026-01-01T10:36:00Z"
+    },
+    "acme|AC-0101-0019": {
+      "customer_email": "ava235@example.com",
+      "amount_minor": 43004,
+      "currency": "USD",
+      "placed_at": "2026-01-01T20:23:00Z"
+    },
+    "acme|AC-0101-0020": {
+      "customer_email": "ella68@example.com",
+      "amount_minor": 41847,
+      "currency": "USD",
+      "placed_at": "2026-01-01T12:50:00Z"
+    },
+    "acme|AC-0101-0021": {
+      "customer_email": "lena323@example.com",
+      "amount_minor": 74841,
+      "currency": "USD",
+      "placed_at": "2026-01-01T20:57:00Z"
+    },
+    "acme|AC-0101-0022": {
+      "customer_email": "gia906@example.com",
+      "amount_minor": 86409,
+      "currency": "USD",
+      "placed_at": "2026-01-01T14:31:00Z"
+    },
+    "acme|AC-0101-0023": {
+      "customer_email": "chloe253@example.com",
+      "amount_minor": 19226,
+      "currency": "EUR",
+      "placed_at": "2026-01-01T10:31:00Z"
+    },
+    "acme|AC-0101-0024": {
+      "customer_email": "jon409@example.com",
+      "amount_minor": 77122,
+      "currency": "EUR",
+      "placed_at": "2026-01-01T13:18:00Z"
+    },
+    "acme|AC-0101-0025": {
+      "customer_email": "iris506@example.com",
+      "amount_minor": 29246,
+      "currency": "EUR",
+      "placed_at": "2026-01-01T08:21:00Z"
+    },
+    "acme|AC-0101-0026": {
+      "customer_email": "ben157@example.com",
+      "amount_minor": 6675,
+      "currency": "USD",
+      "placed_at": "2026-01-01T20:41:00Z"
+    },
+    "acme|AC-0101-0027": {
+      "customer_email": "jon66@example.com",
+      "amount_minor": 89692,
+      "currency": "USD",
+      "placed_at": "2026-01-01T13:12:00Z"
+    },
+    "bolt|BO-0101-0000": {
+      "customer_email": "iris781@example.com",
+      "amount_minor": 34722,
+      "currency": "USD",
+      "placed_at": "2026-01-01T22:35:00Z"
+    },
+    "bolt|BO-0101-0001": {
+      "customer_email": "ben892@example.com",
+      "amount_minor": 67042,
+      "currency": "USD",
+      "placed_at": "2026-01-01T21:34:00Z"
+    },
+    "bolt|BO-0101-0002": {
+      "customer_email": "iris624@example.com",
+      "amount_minor": 86600,
+      "currency": "JPY",
+      "placed_at": "2026-01-01T16:54:00Z"
+    },
+    "bolt|BO-0101-0003": {
+      "customer_email": "chloe553@example.com",
+      "amount_minor": 20532,
+      "currency": "USD",
+      "placed_at": "2026-01-01T12:22:00Z"
+    },
+    "bolt|BO-0101-0004": {
+      "customer_email": "hugo20@example.com",
+      "amount_minor": 61800,
+      "currency": "JPY",
+      "placed_at": "2026-01-01T11:31:00Z"
+    },
+    "bolt|BO-0101-0005": {
+      "customer_email": "ella246@example.com",
+      "amount_minor": 48076,
+      "currency": "USD",
+      "placed_at": "2026-01-01T20:59:00Z"
+    },
+    "bolt|BO-0101-0006": {
+      "customer_email": "jon970@example.com",
+      "amount_minor": 32071,
+      "currency": "USD",
+      "placed_at": "2026-01-01T20:59:00Z"
+    },
+    "bolt|BO-0101-0007": {
+      "customer_email": "hugo836@example.com",
+      "amount_minor": 11726,
+      "currency": "USD",
+      "placed_at": "2026-01-01T18:29:00Z"
+    },
+    "bolt|BO-0101-0008": {
+      "customer_email": "chloe132@example.com",
+      "amount_minor": 70322,
+      "currency": "USD",
+      "placed_at": "2026-01-01T19:04:00Z"
+    },
+    "bolt|BO-0101-0009": {
+      "customer_email": "ella541@example.com",
+      "amount_minor": 56700,
+      "currency": "JPY",
+      "placed_at": "2026-01-01T08:49:00Z"
+    },
+    "bolt|BO-0101-0010": {
+      "customer_email": "iris774@example.com",
+      "amount_minor": 22100,
+      "currency": "JPY",
+      "placed_at": "2026-01-01T21:51:00Z"
+    },
+    "bolt|BO-0101-0011": {
+      "customer_email": "gia688@example.com",
+      "amount_minor": 73500,
+      "currency": "JPY",
+      "placed_at": "2026-01-01T11:19:00Z"
+    },
+    "bolt|BO-0101-0012": {
+      "customer_email": "iris463@example.com",
+      "amount_minor": 45300,
+      "currency": "JPY",
+      "placed_at": "2026-01-01T21:21:00Z"
+    },
+    "bolt|BO-0101-0013": {
+      "customer_email": "ben347@example.com",
+      "amount_minor": 32993,
+      "currency": "USD",
+      "placed_at": "2026-01-01T09:50:00Z"
+    },
+    "bolt|BO-0101-0014": {
+      "customer_email": "dev603@example.com",
+      "amount_minor": 77610,
+      "currency": "USD",
+      "placed_at": "2026-01-01T15:27:00Z"
+    },
+    "bolt|BO-0101-0015": {
+      "customer_email": "lena647@example.com",
+      "amount_minor": 1442,
+      "currency": "USD",
+      "placed_at": "2026-01-01T07:12:00Z"
+    },
+    "bolt|BO-0101-0016": {
+      "customer_email": "ava881@example.com",
+      "amount_minor": 30507,
+      "currency": "USD",
+      "placed_at": "2026-01-01T07:09:00Z"
+    },
+    "bolt|BO-0101-0017": {
+      "customer_email": "dev286@example.com",
+      "amount_minor": 9787,
+      "currency": "GBP",
+      "placed_at": "2026-01-01T14:46:00Z"
+    },
+    "bolt|BO-0101-0018": {
+      "customer_email": "chloe741@example.com",
+      "amount_minor": 22400,
+      "currency": "JPY",
+      "placed_at": "2026-01-01T15:12:00Z"
+    },
+    "bolt|BO-0101-0019": {
+      "customer_email": "hugo827@example.com",
+      "amount_minor": 48900,
+      "currency": "JPY",
+      "placed_at": "2026-01-01T10:08:00Z"
+    },
+    "bolt|BO-0101-0020": {
+      "customer_email": "ben675@example.com",
+      "amount_minor": 25457,
+      "currency": "GBP",
+      "placed_at": "2026-01-01T07:36:00Z"
+    },
+    "bolt|BO-0101-0021": {
+      "customer_email": "gia479@example.com",
+      "amount_minor": 46938,
+      "currency": "GBP",
+      "placed_at": "2026-01-01T13:13:00Z"
+    },
+    "bolt|BO-0101-0022": {
+      "customer_email": "kai101@example.com",
+      "amount_minor": 69400,
+      "currency": "JPY",
+      "placed_at": "2026-01-01T17:09:00Z"
+    },
+    "bolt|BO-0101-0023": {
+      "customer_email": "finn820@example.com",
+      "amount_minor": 53272,
+      "currency": "USD",
+      "placed_at": "2026-01-01T18:25:00Z"
+    },
+    "bolt|BO-0101-0024": {
+      "customer_email": "dev550@example.com",
+      "amount_minor": 33091,
+      "currency": "USD",
+      "placed_at": "2026-01-01T09:16:00Z"
+    },
+    "bolt|BO-0101-0025": {
+      "customer_email": "chloe286@example.com",
+      "amount_minor": 18873,
+      "currency": "GBP",
+      "placed_at": "2026-01-01T13:12:00Z"
+    },
+    "bolt|BO-0101-0026": {
+      "customer_email": "ben454@example.com",
+      "amount_minor": 33242,
+      "currency": "GBP",
+      "placed_at": "2026-01-01T20:55:00Z"
+    },
+    "bolt|BO-0101-0027": {
+      "customer_email": "iris857@example.com",
+      "amount_minor": 5600,
+      "currency": "JPY",
+      "placed_at": "2026-01-01T17:07:00Z"
+    },
+    "bolt|BO-0101-0028": {
+      "customer_email": "dev171@example.com",
+      "amount_minor": 12724,
+      "currency": "USD",
+      "placed_at": "2026-01-01T21:48:00Z"
+    },
+    "bolt|BO-0101-0029": {
+      "customer_email": "dev886@example.com",
+      "amount_minor": 64153,
+      "currency": "GBP",
+      "placed_at": "2026-01-01T14:12:00Z"
+    },
+    "bolt|BO-0101-0030": {
+      "customer_email": "gia3@example.com",
+      "amount_minor": 8185,
+      "currency": "GBP",
+      "placed_at": "2026-01-01T08:48:00Z"
+    },
+    "bolt|BO-0101-0031": {
+      "customer_email": "hugo293@example.com",
+      "amount_minor": 35260,
+      "currency": "GBP",
+      "placed_at": "2026-01-01T21:48:00Z"
+    },
+    "bolt|BO-0101-0032": {
+      "customer_email": "lena499@example.com",
+      "amount_minor": 73345,
+      "currency": "GBP",
+      "placed_at": "2026-01-01T17:17:00Z"
+    },
+    "bolt|BO-0101-0033": {
+      "customer_email": "dev992@example.com",
+      "amount_minor": 25090,
+      "currency": "USD",
+      "placed_at": "2026-01-01T11:03:00Z"
+    },
+    "bolt|BO-0101-0034": {
+      "customer_email": "iris63@example.com",
+      "amount_minor": 76414,
+      "currency": "USD",
+      "placed_at": "2026-01-01T18:33:00Z"
+    },
+    "bolt|BO-0101-0035": {
+      "customer_email": "jon489@example.com",
+      "amount_minor": 6300,
+      "currency": "JPY",
+      "placed_at": "2026-01-01T06:51:00Z"
+    },
+    "bolt|BO-0101-0036": {
+      "customer_email": "iris83@example.com",
+      "amount_minor": 16600,
+      "currency": "JPY",
+      "placed_at": "2026-01-01T06:58:00Z"
+    },
+    "bolt|BO-0101-0037": {
+      "customer_email": "ben692@example.com",
+      "amount_minor": 9481,
+      "currency": "USD",
+      "placed_at": "2026-01-01T16:09:00Z"
+    },
+    "bolt|BO-0101-0038": {
+      "customer_email": "jon253@example.com",
+      "amount_minor": 53423,
+      "currency": "USD",
+      "placed_at": "2026-01-01T08:02:00Z"
+    },
+    "cobalt|CO-0101-0000": {
+      "customer_email": "ben10@example.com",
+      "amount_minor": 41941,
+      "currency": "EUR",
+      "placed_at": "2026-01-01T21:51:00Z"
+    },
+    "cobalt|CO-0101-0001": {
+      "customer_email": "ben76@example.com",
+      "amount_minor": 81916,
+      "currency": "EUR",
+      "placed_at": "2026-01-01T15:36:00Z"
+    },
+    "cobalt|CO-0101-0002": {
+      "customer_email": "ella136@example.com",
+      "amount_minor": 28438,
+      "currency": "GBP",
+      "placed_at": "2026-01-01T14:38:00Z"
+    },
+    "cobalt|CO-0101-0003": {
+      "customer_email": "dev379@example.com",
+      "amount_minor": 9516,
+      "currency": "EUR",
+      "placed_at": "2026-01-01T21:00:00Z"
+    },
+    "cobalt|CO-0101-0004": {
+      "customer_email": "iris721@example.com",
+      "amount_minor": 21176,
+      "currency": "EUR",
+      "placed_at": "2026-01-01T13:28:00Z"
+    },
+    "cobalt|CO-0101-0005": {
+      "customer_email": "kai542@example.com",
+      "amount_minor": 80673,
+      "currency": "EUR",
+      "placed_at": "2026-01-01T22:47:00Z"
+    },
+    "cobalt|CO-0101-0006": {
+      "customer_email": "iris307@example.com",
+      "amount_minor": 88038,
+      "currency": "USD",
+      "placed_at": "2026-01-01T19:56:00Z"
+    },
+    "cobalt|CO-0101-0007": {
+      "customer_email": "chloe271@example.com",
+      "amount_minor": 14077,
+      "currency": "GBP",
+      "placed_at": "2026-01-01T22:01:00Z"
+    },
+    "cobalt|CO-0101-0008": {
+      "customer_email": "iris160@example.com",
+      "amount_minor": 14529,
+      "currency": "USD",
+      "placed_at": "2026-01-01T18:40:00Z"
+    },
+    "cobalt|CO-0101-0009": {
+      "customer_email": "dev735@example.com",
+      "amount_minor": 37430,
+      "currency": "EUR",
+      "placed_at": "2026-01-01T16:19:00Z"
+    },
+    "cobalt|CO-0101-0010": {
+      "customer_email": "kai874@example.com",
+      "amount_minor": 27185,
+      "currency": "EUR",
+      "placed_at": "2026-01-01T17:43:00Z"
+    },
+    "cobalt|CO-0101-0011": {
+      "customer_email": "ella928@example.com",
+      "amount_minor": 67044,
+      "currency": "EUR",
+      "placed_at": "2026-01-01T14:20:00Z"
+    },
+    "cobalt|CO-0101-0012": {
+      "customer_email": "gia850@example.com",
+      "amount_minor": 12597,
+      "currency": "USD",
+      "placed_at": "2026-01-01T16:49:00Z"
+    },
+    "cobalt|CO-0101-0013": {
+      "customer_email": "finn790@example.com",
+      "amount_minor": 6278,
+      "currency": "EUR",
+      "placed_at": "2026-01-01T06:03:00Z"
+    },
+    "cobalt|CO-0101-0014": {
+      "customer_email": "ella166@example.com",
+      "amount_minor": 84007,
+      "currency": "USD",
+      "placed_at": "2026-01-01T22:43:00Z"
+    },
+    "cobalt|CO-0101-0015": {
+      "customer_email": "lena438@example.com",
+      "amount_minor": 58412,
+      "currency": "GBP",
+      "placed_at": "2026-01-01T15:24:00Z"
+    },
+    "cobalt|CO-0101-0016": {
+      "customer_email": "ben968@example.com",
+      "amount_minor": 1767,
+      "currency": "GBP",
+      "placed_at": "2026-01-01T07:54:00Z"
+    },
+    "cobalt|CO-0101-0017": {
+      "customer_email": "ava855@example.com",
+      "amount_minor": 21036,
+      "currency": "GBP",
+      "placed_at": "2026-01-01T15:18:00Z"
+    },
+    "cobalt|CO-0101-0018": {
+      "customer_email": "chloe441@example.com",
+      "amount_minor": 76850,
+      "currency": "EUR",
+      "placed_at": "2026-01-01T15:25:00Z"
+    },
+    "cobalt|CO-0101-0019": {
+      "customer_email": "finn921@example.com",
+      "amount_minor": 5982,
+      "currency": "USD",
+      "placed_at": "2026-01-01T11:15:00Z"
+    },
+    "cobalt|CO-0101-0020": {
+      "customer_email": "kai256@example.com",
+      "amount_minor": 47398,
+      "currency": "USD",
+      "placed_at": "2026-01-01T09:35:00Z"
+    },
+    "cobalt|CO-0101-0021": {
+      "customer_email": "iris906@example.com",
+      "amount_minor": 13973,
+      "currency": "GBP",
+      "placed_at": "2026-01-01T12:02:00Z"
+    },
+    "cobalt|CO-0101-0022": {
+      "customer_email": "chloe948@example.com",
+      "amount_minor": 81851,
+      "currency": "EUR",
+      "placed_at": "2026-01-01T18:47:00Z"
+    },
+    "cobalt|CO-0101-0023": {
+      "customer_email": "chloe903@example.com",
+      "amount_minor": 21799,
+      "currency": "USD",
+      "placed_at": "2026-01-01T22:39:00Z"
+    },
+    "cobalt|CO-0101-0024": {
+      "customer_email": "lena947@example.com",
+      "amount_minor": 3748,
+      "currency": "EUR",
+      "placed_at": "2026-01-01T09:03:00Z"
+    },
+    "cobalt|CO-0101-0025": {
+      "customer_email": "kai885@example.com",
+      "amount_minor": 54464,
+      "currency": "EUR",
+      "placed_at": "2026-01-01T19:41:00Z"
+    },
+    "cobalt|CO-0101-0026": {
+      "customer_email": "chloe807@example.com",
+      "amount_minor": 33027,
+      "currency": "GBP",
+      "placed_at": "2026-01-01T10:33:00Z"
+    },
+    "cobalt|CO-0101-0027": {
+      "customer_email": "ava880@example.com",
+      "amount_minor": 14668,
+      "currency": "GBP",
+      "placed_at": "2026-01-01T12:31:00Z"
+    },
+    "cobalt|CO-0101-0028": {
+      "customer_email": "hugo359@example.com",
+      "amount_minor": 29654,
+      "currency": "EUR",
+      "placed_at": "2026-01-01T09:24:00Z"
+    },
+    "cobalt|CO-0101-0029": {
+      "customer_email": "ava676@example.com",
+      "amount_minor": 30331,
+      "currency": "EUR",
+      "placed_at": "2026-01-01T09:48:00Z"
+    },
+    "cobalt|CO-0101-0030": {
+      "customer_email": "ella886@example.com",
+      "amount_minor": 52727,
+      "currency": "USD",
+      "placed_at": "2026-01-01T11:36:00Z"
+    },
+    "cobalt|CO-0101-0031": {
+      "customer_email": "kai522@example.com",
+      "amount_minor": 37085,
+      "currency": "USD",
+      "placed_at": "2026-01-01T11:59:00Z"
+    },
+    "cobalt|CO-0101-0032": {
+      "customer_email": "iris340@example.com",
+      "amount_minor": 89565,
+      "currency": "EUR",
+      "placed_at": "2026-01-01T22:44:00Z"
+    },
+    "cobalt|CO-0101-0033": {
+      "customer_email": "ella183@example.com",
+      "amount_minor": 15618,
+      "currency": "USD",
+      "placed_at": "2026-01-01T20:58:00Z"
+    },
+    "acme|AC-0102-0000": {
+      "customer_email": "iris704@example.com",
+      "amount_minor": 68646,
+      "currency": "USD",
+      "placed_at": "2026-01-02T21:47:00Z"
+    },
+    "acme|AC-0102-0001": {
+      "customer_email": "ben972@example.com",
+      "amount_minor": 48239,
+      "currency": "USD",
+      "placed_at": "2026-01-02T13:21:00Z"
+    },
+    "acme|AC-0102-0002": {
+      "customer_email": "kai869@example.com",
+      "amount_minor": 82178,
+      "currency": "EUR",
+      "placed_at": "2026-01-02T11:21:00Z"
+    },
+    "acme|AC-0102-0003": {
+      "customer_email": "ella683@example.com",
+      "amount_minor": 39863,
+      "currency": "USD",
+      "placed_at": "2026-01-02T14:39:00Z"
+    },
+    "acme|AC-0102-0004": {
+      "customer_email": "lena303@example.com",
+      "amount_minor": 43253,
+      "currency": "EUR",
+      "placed_at": "2026-01-02T12:52:00Z"
+    },
+    "acme|AC-0102-0005": {
+      "customer_email": "kai963@example.com",
+      "amount_minor": 25644,
+      "currency": "USD",
+      "placed_at": "2026-01-02T13:10:00Z"
+    },
+    "acme|AC-0102-0006": {
+      "customer_email": "chloe631@example.com",
+      "amount_minor": 89277,
+      "currency": "EUR",
+      "placed_at": "2026-01-02T18:46:00Z"
+    },
+    "acme|AC-0102-0007": {
+      "customer_email": "ava312@example.com",
+      "amount_minor": 53725,
+      "currency": "EUR",
+      "placed_at": "2026-01-02T15:21:00Z"
+    },
+    "acme|AC-0102-0008": {
+      "customer_email": "jon622@example.com",
+      "amount_minor": 28049,
+      "currency": "EUR",
+      "placed_at": "2026-01-02T13:20:00Z"
+    },
+    "acme|AC-0102-0009": {
+      "customer_email": "hugo692@example.com",
+      "amount_minor": 61446,
+      "currency": "EUR",
+      "placed_at": "2026-01-02T13:32:00Z"
+    },
+    "acme|AC-0102-0010": {
+      "customer_email": "lena174@example.com",
+      "amount_minor": 67500,
+      "currency": "USD",
+      "placed_at": "2026-01-02T14:04:00Z"
+    },
+    "acme|AC-0102-0011": {
+      "customer_email": "kai649@example.com",
+      "amount_minor": 37696,
+      "currency": "USD",
+      "placed_at": "2026-01-02T14:47:00Z"
+    },
+    "acme|AC-0102-0012": {
+      "customer_email": "dev689@example.com",
+      "amount_minor": 12740,
+      "currency": "EUR",
+      "placed_at": "2026-01-02T19:58:00Z"
+    },
+    "acme|AC-0102-0013": {
+      "customer_email": "dev151@example.com",
+      "amount_minor": 29944,
+      "currency": "EUR",
+      "placed_at": "2026-01-02T19:45:00Z"
+    },
+    "acme|AC-0102-0014": {
+      "customer_email": "hugo626@example.com",
+      "amount_minor": 6557,
+      "currency": "USD",
+      "placed_at": "2026-01-02T10:10:00Z"
+    },
+    "acme|AC-0102-0015": {
+      "customer_email": "kai590@example.com",
+      "amount_minor": 60192,
+      "currency": "USD",
+      "placed_at": "2026-01-02T13:04:00Z"
+    },
+    "acme|AC-0102-0016": {
+      "customer_email": "gia250@example.com",
+      "amount_minor": 50828,
+      "currency": "USD",
+      "placed_at": "2026-01-02T14:26:00Z"
+    },
+    "acme|AC-0102-0017": {
+      "customer_email": "ava915@example.com",
+      "amount_minor": 86490,
+      "currency": "USD",
+      "placed_at": "2026-01-02T17:44:00Z"
+    },
+    "acme|AC-0102-0018": {
+      "customer_email": "chloe824@example.com",
+      "amount_minor": 56224,
+      "currency": "USD",
+      "placed_at": "2026-01-02T09:44:00Z"
+    },
+    "acme|AC-0102-0019": {
+      "customer_email": "dev940@example.com",
+      "amount_minor": 7082,
+      "currency": "EUR",
+      "placed_at": "2026-01-02T15:30:00Z"
+    },
+    "acme|AC-0102-0020": {
+      "customer_email": "hugo684@example.com",
+      "amount_minor": 60329,
+      "currency": "USD",
+      "placed_at": "2026-01-02T08:16:00Z"
+    },
+    "acme|AC-0102-0021": {
+      "customer_email": "lena914@example.com",
+      "amount_minor": 58508,
+      "currency": "EUR",
+      "placed_at": "2026-01-02T16:27:00Z"
+    },
+    "acme|AC-0102-0022": {
+      "customer_email": "chloe762@example.com",
+      "amount_minor": 72610,
+      "currency": "EUR",
+      "placed_at": "2026-01-02T13:36:00Z"
+    },
+    "acme|AC-0102-0023": {
+      "customer_email": "dev861@example.com",
+      "amount_minor": 59491,
+      "currency": "EUR",
+      "placed_at": "2026-01-02T10:25:00Z"
+    },
+    "acme|AC-0102-0024": {
+      "customer_email": "kai245@example.com",
+      "amount_minor": 68827,
+      "currency": "EUR",
+      "placed_at": "2026-01-02T14:16:00Z"
+    },
+    "acme|AC-0102-0025": {
+      "customer_email": "lena293@example.com",
+      "amount_minor": 58154,
+      "currency": "EUR",
+      "placed_at": "2026-01-02T07:19:00Z"
+    },
+    "acme|AC-0102-0026": {
+      "customer_email": "finn915@example.com",
+      "amount_minor": 36114,
+      "currency": "USD",
+      "placed_at": "2026-01-02T11:43:00Z"
+    },
+    "acme|AC-0102-0027": {
+      "customer_email": "dev393@example.com",
+      "amount_minor": 18636,
+      "currency": "USD",
+      "placed_at": "2026-01-02T08:34:00Z"
+    },
+    "acme|AC-0102-0028": {
+      "customer_email": "gia418@example.com",
+      "amount_minor": 29543,
+      "currency": "USD",
+      "placed_at": "2026-01-02T07:05:00Z"
+    },
+    "acme|AC-0102-0029": {
+      "customer_email": "gia64@example.com",
+      "amount_minor": 71621,
+      "currency": "EUR",
+      "placed_at": "2026-01-02T13:57:00Z"
+    },
+    "acme|AC-0102-0030": {
+      "customer_email": "jon969@example.com",
+      "amount_minor": 55569,
+      "currency": "USD",
+      "placed_at": "2026-01-02T12:38:00Z"
+    },
+    "acme|AC-0102-0031": {
+      "customer_email": "hugo7@example.com",
+      "amount_minor": 75956,
+      "currency": "USD",
+      "placed_at": "2026-01-02T12:29:00Z"
+    },
+    "acme|AC-0102-0032": {
+      "customer_email": "gia874@example.com",
+      "amount_minor": 39639,
+      "currency": "EUR",
+      "placed_at": "2026-01-02T18:51:00Z"
+    },
+    "acme|AC-0102-0033": {
+      "customer_email": "lena560@example.com",
+      "amount_minor": 71045,
+      "currency": "EUR",
+      "placed_at": "2026-01-02T18:45:00Z"
+    },
+    "acme|AC-0102-0034": {
+      "customer_email": "ella447@example.com",
+      "amount_minor": 64493,
+      "currency": "USD",
+      "placed_at": "2026-01-02T09:44:00Z"
+    },
+    "acme|AC-0102-0035": {
+      "customer_email": "finn685@example.com",
+      "amount_minor": 4304,
+      "currency": "EUR",
+      "placed_at": "2026-01-02T12:38:00Z"
+    },
+    "acme|AC-0102-0036": {
+      "customer_email": "hugo942@example.com",
+      "amount_minor": 22132,
+      "currency": "EUR",
+      "placed_at": "2026-01-02T20:20:00Z"
+    },
+    "acme|AC-0102-0037": {
+      "customer_email": "ava929@example.com",
+      "amount_minor": 82060,
+      "currency": "USD",
+      "placed_at": "2026-01-02T15:06:00Z"
+    },
+    "bolt|BO-0102-0000": {
+      "customer_email": "finn230@example.com",
+      "amount_minor": 5800,
+      "currency": "JPY",
+      "placed_at": "2026-01-02T22:14:00Z"
+    },
+    "bolt|BO-0102-0001": {
+      "customer_email": "kai42@example.com",
+      "amount_minor": 80400,
+      "currency": "JPY",
+      "placed_at": "2026-01-02T22:20:00Z"
+    },
+    "bolt|BO-0102-0002": {
+      "customer_email": "ava637@example.com",
+      "amount_minor": 32911,
+      "currency": "USD",
+      "placed_at": "2026-01-02T09:24:00Z"
+    },
+    "bolt|BO-0102-0003": {
+      "customer_email": "hugo686@example.com",
+      "amount_minor": 31766,
+      "currency": "USD",
+      "placed_at": "2026-01-02T08:09:00Z"
+    },
+    "bolt|BO-0102-0004": {
+      "customer_email": "dev477@example.com",
+      "amount_minor": 74420,
+      "currency": "USD",
+      "placed_at": "2026-01-02T22:10:00Z"
+    },
+    "bolt|BO-0102-0005": {
+      "customer_email": "chloe621@example.com",
+      "amount_minor": 79000,
+      "currency": "JPY",
+      "placed_at": "2026-01-02T12:17:00Z"
+    },
+    "bolt|BO-0102-0006": {
+      "customer_email": "chloe988@example.com",
+      "amount_minor": 80100,
+      "currency": "JPY",
+      "placed_at": "2026-01-02T19:58:00Z"
+    },
+    "bolt|BO-0102-0007": {
+      "customer_email": "ava952@example.com",
+      "amount_minor": 14668,
+      "currency": "GBP",
+      "placed_at": "2026-01-02T15:52:00Z"
+    },
+    "bolt|BO-0102-0008": {
+      "customer_email": "gia407@example.com",
+      "amount_minor": 75970,
+      "currency": "GBP",
+      "placed_at": "2026-01-02T17:33:00Z"
+    },
+    "bolt|BO-0102-0009": {
+      "customer_email": "lena851@example.com",
+      "amount_minor": 8200,
+      "currency": "JPY",
+      "placed_at": "2026-01-02T16:06:00Z"
+    },
+    "bolt|BO-0102-0010": {
+      "customer_email": "ella871@example.com",
+      "amount_minor": 10900,
+      "currency": "JPY",
+      "placed_at": "2026-01-02T17:53:00Z"
+    },
+    "bolt|BO-0102-0011": {
+      "customer_email": "jon802@example.com",
+      "amount_minor": 83000,
+      "currency": "JPY",
+      "placed_at": "2026-01-02T08:03:00Z"
+    },
+    "bolt|BO-0102-0012": {
+      "customer_email": "gia678@example.com",
+      "amount_minor": 46008,
+      "currency": "USD",
+      "placed_at": "2026-01-02T15:05:00Z"
+    },
+    "bolt|BO-0102-0013": {
+      "customer_email": "kai350@example.com",
+      "amount_minor": 9538,
+      "currency": "GBP",
+      "placed_at": "2026-01-02T14:38:00Z"
+    },
+    "bolt|BO-0102-0014": {
+      "customer_email": "hugo109@example.com",
+      "amount_minor": 55557,
+      "currency": "USD",
+      "placed_at": "2026-01-02T20:02:00Z"
+    },
+    "bolt|BO-0102-0015": {
+      "customer_email": "hugo725@example.com",
+      "amount_minor": 47972,
+      "currency": "GBP",
+      "placed_at": "2026-01-02T16:50:00Z"
+    },
+    "bolt|BO-0102-0016": {
+      "customer_email": "lena535@example.com",
+      "amount_minor": 57580,
+      "currency": "USD",
+      "placed_at": "2026-01-02T09:00:00Z"
+    },
+    "bolt|BO-0102-0017": {
+      "customer_email": "iris794@example.com",
+      "amount_minor": 63500,
+      "currency": "JPY",
+      "placed_at": "2026-01-02T19:47:00Z"
+    },
+    "bolt|BO-0102-0018": {
+      "customer_email": "lena607@example.com",
+      "amount_minor": 61431,
+      "currency": "GBP",
+      "placed_at": "2026-01-02T13:26:00Z"
+    },
+    "bolt|BO-0102-0019": {
+      "customer_email": "dev851@example.com",
+      "amount_minor": 42745,
+      "currency": "GBP",
+      "placed_at": "2026-01-02T20:32:00Z"
+    },
+    "bolt|BO-0102-0020": {
+      "customer_email": "hugo250@example.com",
+      "amount_minor": 37059,
+      "currency": "USD",
+      "placed_at": "2026-01-02T21:02:00Z"
+    },
+    "bolt|BO-0102-0021": {
+      "customer_email": "kai389@example.com",
+      "amount_minor": 75191,
+      "currency": "GBP",
+      "placed_at": "2026-01-02T16:24:00Z"
+    },
+    "bolt|BO-0102-0022": {
+      "customer_email": "finn187@example.com",
+      "amount_minor": 3961,
+      "currency": "GBP",
+      "placed_at": "2026-01-02T14:26:00Z"
+    },
+    "bolt|BO-0102-0023": {
+      "customer_email": "ella349@example.com",
+      "amount_minor": 28302,
+      "currency": "GBP",
+      "placed_at": "2026-01-02T12:03:00Z"
+    },
+    "bolt|BO-0102-0024": {
+      "customer_email": "ella570@example.com",
+      "amount_minor": 78639,
+      "currency": "GBP",
+      "placed_at": "2026-01-02T17:58:00Z"
+    },
+    "cobalt|CO-0102-0000": {
+      "customer_email": "gia764@example.com",
+      "amount_minor": 70088,
+      "currency": "GBP",
+      "placed_at": "2026-01-02T11:52:00Z"
+    },
+    "cobalt|CO-0102-0001": {
+      "customer_email": "lena465@example.com",
+      "amount_minor": 43857,
+      "currency": "GBP",
+      "placed_at": "2026-01-02T12:00:00Z"
+    },
+    "cobalt|CO-0102-0002": {
+      "customer_email": "dev124@example.com",
+      "amount_minor": 40689,
+      "currency": "EUR",
+      "placed_at": "2026-01-02T10:17:00Z"
+    },
+    "cobalt|CO-0102-0003": {
+      "customer_email": "ben761@example.com",
+      "amount_minor": 25742,
+      "currency": "GBP",
+      "placed_at": "2026-01-02T11:23:00Z"
+    },
+    "cobalt|CO-0102-0004": {
+      "customer_email": "dev757@example.com",
+      "amount_minor": 24767,
+      "currency": "GBP",
+      "placed_at": "2026-01-02T09:16:00Z"
+    },
+    "cobalt|CO-0102-0005": {
+      "customer_email": "jon779@example.com",
+      "amount_minor": 36741,
+      "currency": "EUR",
+      "placed_at": "2026-01-02T18:21:00Z"
+    },
+    "cobalt|CO-0102-0006": {
+      "customer_email": "ben853@example.com",
+      "amount_minor": 79722,
+      "currency": "GBP",
+      "placed_at": "2026-01-02T10:49:00Z"
+    },
+    "cobalt|CO-0102-0007": {
+      "customer_email": "finn184@example.com",
+      "amount_minor": 39329,
+      "currency": "USD",
+      "placed_at": "2026-01-02T09:52:00Z"
+    },
+    "cobalt|CO-0102-0008": {
+      "customer_email": "iris130@example.com",
+      "amount_minor": 2354,
+      "currency": "EUR",
+      "placed_at": "2026-01-02T18:05:00Z"
+    },
+    "cobalt|CO-0102-0009": {
+      "customer_email": "ava567@example.com",
+      "amount_minor": 6465,
+      "currency": "EUR",
+      "placed_at": "2026-01-02T22:37:00Z"
+    },
+    "cobalt|CO-0102-0010": {
+      "customer_email": "hugo106@example.com",
+      "amount_minor": 17051,
+      "currency": "EUR",
+      "placed_at": "2026-01-02T16:53:00Z"
+    },
+    "cobalt|CO-0102-0011": {
+      "customer_email": "hugo491@example.com",
+      "amount_minor": 75743,
+      "currency": "USD",
+      "placed_at": "2026-01-02T10:51:00Z"
+    },
+    "cobalt|CO-0102-0012": {
+      "customer_email": "ava259@example.com",
+      "amount_minor": 45157,
+      "currency": "EUR",
+      "placed_at": "2026-01-02T09:08:00Z"
+    },
+    "cobalt|CO-0102-0013": {
+      "customer_email": "ben411@example.com",
+      "amount_minor": 15453,
+      "currency": "EUR",
+      "placed_at": "2026-01-02T20:01:00Z"
+    },
+    "cobalt|CO-0102-0014": {
+      "customer_email": "kai703@example.com",
+      "amount_minor": 10210,
+      "currency": "EUR",
+      "placed_at": "2026-01-02T15:50:00Z"
+    },
+    "cobalt|CO-0102-0015": {
+      "customer_email": "jon972@example.com",
+      "amount_minor": 20387,
+      "currency": "USD",
+      "placed_at": "2026-01-02T08:32:00Z"
+    },
+    "cobalt|CO-0102-0016": {
+      "customer_email": "dev122@example.com",
+      "amount_minor": 11664,
+      "currency": "EUR",
+      "placed_at": "2026-01-02T22:57:00Z"
+    },
+    "cobalt|CO-0102-0017": {
+      "customer_email": "jon810@example.com",
+      "amount_minor": 55048,
+      "currency": "GBP",
+      "placed_at": "2026-01-02T16:20:00Z"
+    },
+    "cobalt|CO-0102-0018": {
+      "customer_email": "iris390@example.com",
+      "amount_minor": 30081,
+      "currency": "GBP",
+      "placed_at": "2026-01-02T19:14:00Z"
+    },
+    "cobalt|CO-0102-0019": {
+      "customer_email": "jon440@example.com",
+      "amount_minor": 58528,
+      "currency": "EUR",
+      "placed_at": "2026-01-02T11:04:00Z"
+    },
+    "cobalt|CO-0102-0020": {
+      "customer_email": "ava625@example.com",
+      "amount_minor": 75031,
+      "currency": "EUR",
+      "placed_at": "2026-01-02T16:35:00Z"
+    },
+    "cobalt|CO-0102-0021": {
+      "customer_email": "dev641@example.com",
+      "amount_minor": 13506,
+      "currency": "GBP",
+      "placed_at": "2026-01-02T22:10:00Z"
+    },
+    "cobalt|CO-0102-0022": {
+      "customer_email": "ben161@example.com",
+      "amount_minor": 35187,
+      "currency": "USD",
+      "placed_at": "2026-01-02T17:16:00Z"
+    },
+    "cobalt|CO-0102-0023": {
+      "customer_email": "ben161@example.com",
+      "amount_minor": 23282,
+      "currency": "USD",
+      "placed_at": "2026-01-02T15:25:00Z"
+    },
+    "cobalt|CO-0102-0024": {
+      "customer_email": "lena609@example.com",
+      "amount_minor": 54045,
+      "currency": "USD",
+      "placed_at": "2026-01-02T13:41:00Z"
+    },
+    "cobalt|CO-0102-0025": {
+      "customer_email": "dev296@example.com",
+      "amount_minor": 38675,
+      "currency": "EUR",
+      "placed_at": "2026-01-02T06:33:00Z"
+    },
+    "cobalt|CO-0102-0026": {
+      "customer_email": "hugo73@example.com",
+      "amount_minor": 37556,
+      "currency": "GBP",
+      "placed_at": "2026-01-02T17:59:00Z"
+    },
+    "cobalt|CO-0102-0027": {
+      "customer_email": "ella807@example.com",
+      "amount_minor": 32095,
+      "currency": "GBP",
+      "placed_at": "2026-01-02T21:46:00Z"
+    },
+    "cobalt|CO-0102-0028": {
+      "customer_email": "dev436@example.com",
+      "amount_minor": 77804,
+      "currency": "GBP",
+      "placed_at": "2026-01-02T17:17:00Z"
+    },
+    "cobalt|CO-0102-0029": {
+      "customer_email": "kai153@example.com",
+      "amount_minor": 71876,
+      "currency": "USD",
+      "placed_at": "2026-01-02T09:50:00Z"
+    },
+    "cobalt|CO-0102-0030": {
+      "customer_email": "ava170@example.com",
+      "amount_minor": 19143,
+      "currency": "EUR",
+      "placed_at": "2026-01-02T07:13:00Z"
+    },
+    "cobalt|CO-0102-0031": {
+      "customer_email": "jon944@example.com",
+      "amount_minor": 78493,
+      "currency": "EUR",
+      "placed_at": "2026-01-02T18:46:00Z"
+    },
+    "cobalt|CO-0102-0032": {
+      "customer_email": "hugo706@example.com",
+      "amount_minor": 58060,
+      "currency": "EUR",
+      "placed_at": "2026-01-02T08:07:00Z"
+    },
+    "cobalt|CO-0102-0033": {
+      "customer_email": "ella513@example.com",
+      "amount_minor": 53257,
+      "currency": "EUR",
+      "placed_at": "2026-01-02T22:05:00Z"
+    },
+    "cobalt|CO-0102-0034": {
+      "customer_email": "ben613@example.com",
+      "amount_minor": 65222,
+      "currency": "GBP",
+      "placed_at": "2026-01-02T13:28:00Z"
+    },
+    "cobalt|CO-0102-0035": {
+      "customer_email": "finn619@example.com",
+      "amount_minor": 57126,
+      "currency": "USD",
+      "placed_at": "2026-01-02T18:32:00Z"
+    },
+    "cobalt|CO-0102-0036": {
+      "customer_email": "dev985@example.com",
+      "amount_minor": 3890,
+      "currency": "EUR",
+      "placed_at": "2026-01-02T07:33:00Z"
+    },
+    "cobalt|CO-0102-0037": {
+      "customer_email": "ava784@example.com",
+      "amount_minor": 75892,
+      "currency": "GBP",
+      "placed_at": "2026-01-02T16:01:00Z"
+    },
+    "cobalt|CO-0102-0038": {
+      "customer_email": "ava782@example.com",
+      "amount_minor": 35825,
+      "currency": "GBP",
+      "placed_at": "2026-01-02T15:50:00Z"
+    },
+    "cobalt|CO-0102-0039": {
+      "customer_email": "kai453@example.com",
+      "amount_minor": 62169,
+      "currency": "USD",
+      "placed_at": "2026-01-02T14:51:00Z"
+    },
+    "acme|AC-0103-0000": {
+      "customer_email": "finn119@example.com",
+      "amount_minor": 41724,
+      "currency": "USD",
+      "placed_at": "2026-01-03T10:18:00Z"
+    },
+    "acme|AC-0103-0001": {
+      "customer_email": "ava674@example.com",
+      "amount_minor": 67949,
+      "currency": "EUR",
+      "placed_at": "2026-01-03T20:04:00Z"
+    },
+    "acme|AC-0103-0002": {
+      "customer_email": "dev531@example.com",
+      "amount_minor": 54665,
+      "currency": "EUR",
+      "placed_at": "2026-01-03T06:55:00Z"
+    },
+    "acme|AC-0103-0003": {
+      "customer_email": "hugo641@example.com",
+      "amount_minor": 82109,
+      "currency": "EUR",
+      "placed_at": "2026-01-03T18:54:00Z"
+    },
+    "acme|AC-0103-0004": {
+      "customer_email": "ella563@example.com",
+      "amount_minor": 7264,
+      "currency": "EUR",
+      "placed_at": "2026-01-03T09:28:00Z"
+    },
+    "acme|AC-0103-0005": {
+      "customer_email": "lena497@example.com",
+      "amount_minor": 38252,
+      "currency": "USD",
+      "placed_at": "2026-01-03T13:28:00Z"
+    },
+    "acme|AC-0103-0006": {
+      "customer_email": "kai624@example.com",
+      "amount_minor": 4283,
+      "currency": "USD",
+      "placed_at": "2026-01-03T22:36:00Z"
+    },
+    "acme|AC-0103-0007": {
+      "customer_email": "iris15@example.com",
+      "amount_minor": 21258,
+      "currency": "USD",
+      "placed_at": "2026-01-03T11:18:00Z"
+    },
+    "acme|AC-0103-0008": {
+      "customer_email": "ben473@example.com",
+      "amount_minor": 12717,
+      "currency": "EUR",
+      "placed_at": "2026-01-03T09:50:00Z"
+    },
+    "acme|AC-0103-0009": {
+      "customer_email": "chloe511@example.com",
+      "amount_minor": 85096,
+      "currency": "USD",
+      "placed_at": "2026-01-03T20:12:00Z"
+    },
+    "acme|AC-0103-0010": {
+      "customer_email": "ella426@example.com",
+      "amount_minor": 67198,
+      "currency": "EUR",
+      "placed_at": "2026-01-03T18:02:00Z"
+    },
+    "acme|AC-0103-0011": {
+      "customer_email": "hugo565@example.com",
+      "amount_minor": 62394,
+      "currency": "EUR",
+      "placed_at": "2026-01-03T10:09:00Z"
+    },
+    "acme|AC-0103-0012": {
+      "customer_email": "jon521@example.com",
+      "amount_minor": 50777,
+      "currency": "USD",
+      "placed_at": "2026-01-03T09:15:00Z"
+    },
+    "acme|AC-0103-0013": {
+      "customer_email": "gia349@example.com",
+      "amount_minor": 9650,
+      "currency": "USD",
+      "placed_at": "2026-01-03T10:42:00Z"
+    },
+    "acme|AC-0103-0014": {
+      "customer_email": "lena306@example.com",
+      "amount_minor": 836,
+      "currency": "EUR",
+      "placed_at": "2026-01-03T10:49:00Z"
+    },
+    "acme|AC-0103-0015": {
+      "customer_email": "iris496@example.com",
+      "amount_minor": 19676,
+      "currency": "EUR",
+      "placed_at": "2026-01-03T13:37:00Z"
+    },
+    "acme|AC-0103-0016": {
+      "customer_email": "iris387@example.com",
+      "amount_minor": 44073,
+      "currency": "EUR",
+      "placed_at": "2026-01-03T15:25:00Z"
+    },
+    "acme|AC-0103-0017": {
+      "customer_email": "dev715@example.com",
+      "amount_minor": 42676,
+      "currency": "EUR",
+      "placed_at": "2026-01-03T20:50:00Z"
+    },
+    "acme|AC-0103-0018": {
+      "customer_email": "dev877@example.com",
+      "amount_minor": 75446,
+      "currency": "USD",
+      "placed_at": "2026-01-03T12:32:00Z"
+    },
+    "acme|AC-0103-0019": {
+      "customer_email": "lena485@example.com",
+      "amount_minor": 6220,
+      "currency": "EUR",
+      "placed_at": "2026-01-03T11:25:00Z"
+    },
+    "acme|AC-0103-0020": {
+      "customer_email": "kai812@example.com",
+      "amount_minor": 51104,
+      "currency": "EUR",
+      "placed_at": "2026-01-03T22:52:00Z"
+    },
+    "acme|AC-0103-0021": {
+      "customer_email": "ava130@example.com",
+      "amount_minor": 65423,
+      "currency": "USD",
+      "placed_at": "2026-01-03T22:27:00Z"
+    },
+    "acme|AC-0103-0022": {
+      "customer_email": "hugo103@example.com",
+      "amount_minor": 13654,
+      "currency": "EUR",
+      "placed_at": "2026-01-03T20:55:00Z"
+    },
+    "acme|AC-0103-0023": {
+      "customer_email": "chloe420@example.com",
+      "amount_minor": 2511,
+      "currency": "EUR",
+      "placed_at": "2026-01-03T18:19:00Z"
+    },
+    "acme|AC-0103-0024": {
+      "customer_email": "ella347@example.com",
+      "amount_minor": 10307,
+      "currency": "USD",
+      "placed_at": "2026-01-03T14:00:00Z"
+    },
+    "acme|AC-0103-0025": {
+      "customer_email": "finn873@example.com",
+      "amount_minor": 85675,
+      "currency": "EUR",
+      "placed_at": "2026-01-03T07:22:00Z"
+    },
+    "acme|AC-0103-0026": {
+      "customer_email": "lena909@example.com",
+      "amount_minor": 42005,
+      "currency": "EUR",
+      "placed_at": "2026-01-03T16:41:00Z"
+    },
+    "acme|AC-0103-0027": {
+      "customer_email": "jon71@example.com",
+      "amount_minor": 71412,
+      "currency": "EUR",
+      "placed_at": "2026-01-03T06:36:00Z"
+    },
+    "acme|AC-0103-0028": {
+      "customer_email": "ella233@example.com",
+      "amount_minor": 83227,
+      "currency": "USD",
+      "placed_at": "2026-01-03T17:40:00Z"
+    },
+    "acme|AC-0103-0029": {
+      "customer_email": "ben779@example.com",
+      "amount_minor": 57381,
+      "currency": "USD",
+      "placed_at": "2026-01-03T22:41:00Z"
+    },
+    "acme|AC-0103-0030": {
+      "customer_email": "lena307@example.com",
+      "amount_minor": 58653,
+      "currency": "USD",
+      "placed_at": "2026-01-03T08:50:00Z"
+    },
+    "acme|AC-0103-0031": {
+      "customer_email": "ava301@example.com",
+      "amount_minor": 6528,
+      "currency": "USD",
+      "placed_at": "2026-01-03T11:32:00Z"
+    },
+    "acme|AC-0103-0032": {
+      "customer_email": "chloe251@example.com",
+      "amount_minor": 49631,
+      "currency": "EUR",
+      "placed_at": "2026-01-03T13:21:00Z"
+    },
+    "acme|AC-0103-0033": {
+      "customer_email": "chloe175@example.com",
+      "amount_minor": 74677,
+      "currency": "EUR",
+      "placed_at": "2026-01-03T17:38:00Z"
+    },
+    "acme|AC-0103-0034": {
+      "customer_email": "gia635@example.com",
+      "amount_minor": 10850,
+      "currency": "USD",
+      "placed_at": "2026-01-03T16:24:00Z"
+    },
+    "acme|AC-0103-0035": {
+      "customer_email": "jon147@example.com",
+      "amount_minor": 65730,
+      "currency": "USD",
+      "placed_at": "2026-01-03T21:34:00Z"
+    },
+    "acme|AC-0103-0036": {
+      "customer_email": "ella471@example.com",
+      "amount_minor": 60943,
+      "currency": "USD",
+      "placed_at": "2026-01-03T16:53:00Z"
+    },
+    "acme|AC-0103-0037": {
+      "customer_email": "hugo923@example.com",
+      "amount_minor": 87904,
+      "currency": "EUR",
+      "placed_at": "2026-01-03T06:09:00Z"
+    },
+    "acme|AC-0103-0038": {
+      "customer_email": "chloe76@example.com",
+      "amount_minor": 89315,
+      "currency": "EUR",
+      "placed_at": "2026-01-03T15:19:00Z"
+    },
+    "bolt|BO-0103-0000": {
+      "customer_email": "ella795@example.com",
+      "amount_minor": 85700,
+      "currency": "JPY",
+      "placed_at": "2026-01-03T21:25:00Z"
+    },
+    "bolt|BO-0103-0001": {
+      "customer_email": "finn225@example.com",
+      "amount_minor": 80069,
+      "currency": "USD",
+      "placed_at": "2026-01-03T19:41:00Z"
+    },
+    "bolt|BO-0103-0002": {
+      "customer_email": "kai774@example.com",
+      "amount_minor": 64000,
+      "currency": "JPY",
+      "placed_at": "2026-01-03T10:16:00Z"
+    },
+    "bolt|BO-0103-0003": {
+      "customer_email": "chloe644@example.com",
+      "amount_minor": 70200,
+      "currency": "JPY",
+      "placed_at": "2026-01-03T20:18:00Z"
+    },
+    "bolt|BO-0103-0004": {
+      "customer_email": "ava317@example.com",
+      "amount_minor": 82742,
+      "currency": "USD",
+      "placed_at": "2026-01-03T17:01:00Z"
+    },
+    "bolt|BO-0103-0005": {
+      "customer_email": "finn750@example.com",
+      "amount_minor": 4873,
+      "currency": "GBP",
+      "placed_at": "2026-01-03T15:53:00Z"
+    },
+    "bolt|BO-0103-0006": {
+      "customer_email": "ella335@example.com",
+      "amount_minor": 12313,
+      "currency": "USD",
+      "placed_at": "2026-01-03T21:31:00Z"
+    },
+    "bolt|BO-0103-0007": {
+      "customer_email": "chloe806@example.com",
+      "amount_minor": 18500,
+      "currency": "JPY",
+      "placed_at": "2026-01-03T09:25:00Z"
+    },
+    "bolt|BO-0103-0008": {
+      "customer_email": "ella851@example.com",
+      "amount_minor": 54800,
+      "currency": "JPY",
+      "placed_at": "2026-01-03T14:33:00Z"
+    },
+    "bolt|BO-0103-0009": {
+      "customer_email": "hugo991@example.com",
+      "amount_minor": 34181,
+      "currency": "USD",
+      "placed_at": "2026-01-03T21:35:00Z"
+    },
+    "bolt|BO-0103-0010": {
+      "customer_email": "ben480@example.com",
+      "amount_minor": 44896,
+      "currency": "GBP",
+      "placed_at": "2026-01-03T19:43:00Z"
+    },
+    "bolt|BO-0103-0011": {
+      "customer_email": "dev881@example.com",
+      "amount_minor": 18949,
+      "currency": "USD",
+      "placed_at": "2026-01-03T18:52:00Z"
+    },
+    "bolt|BO-0103-0012": {
+      "customer_email": "iris375@example.com",
+      "amount_minor": 41100,
+      "currency": "JPY",
+      "placed_at": "2026-01-03T22:30:00Z"
+    },
+    "bolt|BO-0103-0013": {
+      "customer_email": "ella550@example.com",
+      "amount_minor": 52217,
+      "currency": "USD",
+      "placed_at": "2026-01-03T06:14:00Z"
+    },
+    "bolt|BO-0103-0014": {
+      "customer_email": "kai767@example.com",
+      "amount_minor": 60409,
+      "currency": "USD",
+      "placed_at": "2026-01-03T12:17:00Z"
+    },
+    "bolt|BO-0103-0015": {
+      "customer_email": "kai963@example.com",
+      "amount_minor": 60300,
+      "currency": "JPY",
+      "placed_at": "2026-01-03T12:30:00Z"
+    },
+    "bolt|BO-0103-0016": {
+      "customer_email": "dev483@example.com",
+      "amount_minor": 14701,
+      "currency": "GBP",
+      "placed_at": "2026-01-03T17:31:00Z"
+    },
+    "bolt|BO-0103-0017": {
+      "customer_email": "iris336@example.com",
+      "amount_minor": 81705,
+      "currency": "USD",
+      "placed_at": "2026-01-03T21:05:00Z"
+    },
+    "bolt|BO-0103-0018": {
+      "customer_email": "kai844@example.com",
+      "amount_minor": 66800,
+      "currency": "JPY",
+      "placed_at": "2026-01-03T07:04:00Z"
+    },
+    "bolt|BO-0103-0019": {
+      "customer_email": "gia120@example.com",
+      "amount_minor": 40108,
+      "currency": "GBP",
+      "placed_at": "2026-01-03T17:04:00Z"
+    },
+    "bolt|BO-0103-0020": {
+      "customer_email": "ava312@example.com",
+      "amount_minor": 6443,
+      "currency": "USD",
+      "placed_at": "2026-01-03T22:08:00Z"
+    },
+    "bolt|BO-0103-0021": {
+      "customer_email": "dev909@example.com",
+      "amount_minor": 15720,
+      "currency": "GBP",
+      "placed_at": "2026-01-03T07:39:00Z"
+    },
+    "bolt|BO-0103-0022": {
+      "customer_email": "finn687@example.com",
+      "amount_minor": 40200,
+      "currency": "JPY",
+      "placed_at": "2026-01-03T13:44:00Z"
+    },
+    "bolt|BO-0103-0023": {
+      "customer_email": "lena745@example.com",
+      "amount_minor": 43400,
+      "currency": "JPY",
+      "placed_at": "2026-01-03T16:01:00Z"
+    },
+    "bolt|BO-0103-0024": {
+      "customer_email": "ben854@example.com",
+      "amount_minor": 54879,
+      "currency": "USD",
+      "placed_at": "2026-01-03T17:10:00Z"
+    },
+    "bolt|BO-0103-0025": {
+      "customer_email": "ella34@example.com",
+      "amount_minor": 81194,
+      "currency": "GBP",
+      "placed_at": "2026-01-03T12:57:00Z"
+    },
+    "cobalt|CO-0103-0000": {
+      "customer_email": "chloe806@example.com",
+      "amount_minor": 44213,
+      "currency": "USD",
+      "placed_at": "2026-01-03T10:09:00Z"
+    },
+    "cobalt|CO-0103-0001": {
+      "customer_email": "iris213@example.com",
+      "amount_minor": 27096,
+      "currency": "GBP",
+      "placed_at": "2026-01-03T07:10:00Z"
+    },
+    "cobalt|CO-0103-0002": {
+      "customer_email": "dev337@example.com",
+      "amount_minor": 28805,
+      "currency": "GBP",
+      "placed_at": "2026-01-03T19:52:00Z"
+    },
+    "cobalt|CO-0103-0003": {
+      "customer_email": "ella880@example.com",
+      "amount_minor": 78616,
+      "currency": "USD",
+      "placed_at": "2026-01-03T06:02:00Z"
+    },
+    "cobalt|CO-0103-0004": {
+      "customer_email": "ella818@example.com",
+      "amount_minor": 17538,
+      "currency": "USD",
+      "placed_at": "2026-01-03T15:13:00Z"
+    },
+    "cobalt|CO-0103-0005": {
+      "customer_email": "ava135@example.com",
+      "amount_minor": 14908,
+      "currency": "USD",
+      "placed_at": "2026-01-03T17:16:00Z"
+    },
+    "cobalt|CO-0103-0006": {
+      "customer_email": "dev603@example.com",
+      "amount_minor": 47455,
+      "currency": "USD",
+      "placed_at": "2026-01-03T19:28:00Z"
+    },
+    "cobalt|CO-0103-0007": {
+      "customer_email": "ella54@example.com",
+      "amount_minor": 2568,
+      "currency": "EUR",
+      "placed_at": "2026-01-03T08:58:00Z"
+    },
+    "cobalt|CO-0103-0008": {
+      "customer_email": "ben764@example.com",
+      "amount_minor": 55676,
+      "currency": "USD",
+      "placed_at": "2026-01-03T14:58:00Z"
+    },
+    "cobalt|CO-0103-0009": {
+      "customer_email": "finn526@example.com",
+      "amount_minor": 62922,
+      "currency": "USD",
+      "placed_at": "2026-01-03T13:39:00Z"
+    },
+    "cobalt|CO-0103-0010": {
+      "customer_email": "iris227@example.com",
+      "amount_minor": 14793,
+      "currency": "GBP",
+      "placed_at": "2026-01-03T13:42:00Z"
+    },
+    "cobalt|CO-0103-0011": {
+      "customer_email": "kai534@example.com",
+      "amount_minor": 6183,
+      "currency": "GBP",
+      "placed_at": "2026-01-03T18:24:00Z"
+    },
+    "cobalt|CO-0103-0012": {
+      "customer_email": "ava63@example.com",
+      "amount_minor": 60536,
+      "currency": "EUR",
+      "placed_at": "2026-01-03T16:58:00Z"
+    },
+    "cobalt|CO-0103-0013": {
+      "customer_email": "kai111@example.com",
+      "amount_minor": 53140,
+      "currency": "EUR",
+      "placed_at": "2026-01-03T13:16:00Z"
+    },
+    "cobalt|CO-0103-0014": {
+      "customer_email": "ben330@example.com",
+      "amount_minor": 58638,
+      "currency": "EUR",
+      "placed_at": "2026-01-03T07:15:00Z"
+    },
+    "cobalt|CO-0103-0015": {
+      "customer_email": "chloe282@example.com",
+      "amount_minor": 19942,
+      "currency": "GBP",
+      "placed_at": "2026-01-03T07:07:00Z"
+    },
+    "cobalt|CO-0103-0016": {
+      "customer_email": "iris730@example.com",
+      "amount_minor": 83478,
+      "currency": "GBP",
+      "placed_at": "2026-01-03T15:59:00Z"
+    },
+    "cobalt|CO-0103-0017": {
+      "customer_email": "jon544@example.com",
+      "amount_minor": 50425,
+      "currency": "EUR",
+      "placed_at": "2026-01-03T22:58:00Z"
+    },
+    "cobalt|CO-0103-0018": {
+      "customer_email": "jon441@example.com",
+      "amount_minor": 60969,
+      "currency": "EUR",
+      "placed_at": "2026-01-03T14:37:00Z"
+    },
+    "cobalt|CO-0103-0019": {
+      "customer_email": "kai667@example.com",
+      "amount_minor": 15496,
+      "currency": "USD",
+      "placed_at": "2026-01-03T20:33:00Z"
+    },
+    "cobalt|CO-0103-0020": {
+      "customer_email": "hugo910@example.com",
+      "amount_minor": 28683,
+      "currency": "GBP",
+      "placed_at": "2026-01-03T13:20:00Z"
+    },
+    "cobalt|CO-0103-0021": {
+      "customer_email": "hugo409@example.com",
+      "amount_minor": 54739,
+      "currency": "USD",
+      "placed_at": "2026-01-03T11:47:00Z"
+    },
+    "cobalt|CO-0103-0022": {
+      "customer_email": "gia321@example.com",
+      "amount_minor": 12963,
+      "currency": "EUR",
+      "placed_at": "2026-01-03T11:20:00Z"
+    },
+    "cobalt|CO-0103-0023": {
+      "customer_email": "chloe704@example.com",
+      "amount_minor": 33908,
+      "currency": "GBP",
+      "placed_at": "2026-01-03T12:23:00Z"
+    },
+    "cobalt|CO-0103-0024": {
+      "customer_email": "ben96@example.com",
+      "amount_minor": 9299,
+      "currency": "EUR",
+      "placed_at": "2026-01-03T07:33:00Z"
+    },
+    "acme|AC-0104-0000": {
+      "customer_email": "iris218@example.com",
+      "amount_minor": 14079,
+      "currency": "EUR",
+      "placed_at": "2026-01-04T15:51:00Z"
+    },
+    "acme|AC-0104-0001": {
+      "customer_email": "dev868@example.com",
+      "amount_minor": 86579,
+      "currency": "USD",
+      "placed_at": "2026-01-04T14:13:00Z"
+    },
+    "acme|AC-0104-0002": {
+      "customer_email": "iris377@example.com",
+      "amount_minor": 46390,
+      "currency": "USD",
+      "placed_at": "2026-01-04T20:25:00Z"
+    },
+    "acme|AC-0104-0003": {
+      "customer_email": "dev827@example.com",
+      "amount_minor": 37312,
+      "currency": "USD",
+      "placed_at": "2026-01-04T15:47:00Z"
+    },
+    "acme|AC-0104-0004": {
+      "customer_email": "jon629@example.com",
+      "amount_minor": 74026,
+      "currency": "EUR",
+      "placed_at": "2026-01-04T22:37:00Z"
+    },
+    "acme|AC-0104-0005": {
+      "customer_email": "kai850@example.com",
+      "amount_minor": 80322,
+      "currency": "USD",
+      "placed_at": "2026-01-04T21:51:00Z"
+    },
+    "acme|AC-0104-0006": {
+      "customer_email": "ella720@example.com",
+      "amount_minor": 4294,
+      "currency": "EUR",
+      "placed_at": "2026-01-04T09:04:00Z"
+    },
+    "acme|AC-0104-0007": {
+      "customer_email": "ava186@example.com",
+      "amount_minor": 45041,
+      "currency": "EUR",
+      "placed_at": "2026-01-04T11:59:00Z"
+    },
+    "acme|AC-0104-0008": {
+      "customer_email": "gia72@example.com",
+      "amount_minor": 74728,
+      "currency": "USD",
+      "placed_at": "2026-01-04T17:13:00Z"
+    },
+    "acme|AC-0104-0009": {
+      "customer_email": "ava94@example.com",
+      "amount_minor": 83491,
+      "currency": "USD",
+      "placed_at": "2026-01-04T22:35:00Z"
+    },
+    "acme|AC-0104-0010": {
+      "customer_email": "hugo350@example.com",
+      "amount_minor": 50108,
+      "currency": "USD",
+      "placed_at": "2026-01-04T13:09:00Z"
+    },
+    "acme|AC-0104-0011": {
+      "customer_email": "lena333@example.com",
+      "amount_minor": 49003,
+      "currency": "USD",
+      "placed_at": "2026-01-04T11:19:00Z"
+    },
+    "acme|AC-0104-0012": {
+      "customer_email": "chloe773@example.com",
+      "amount_minor": 7395,
+      "currency": "USD",
+      "placed_at": "2026-01-04T08:39:00Z"
+    },
+    "acme|AC-0104-0013": {
+      "customer_email": "ella454@example.com",
+      "amount_minor": 88838,
+      "currency": "USD",
+      "placed_at": "2026-01-04T07:23:00Z"
+    },
+    "acme|AC-0104-0014": {
+      "customer_email": "hugo425@example.com",
+      "amount_minor": 64156,
+      "currency": "EUR",
+      "placed_at": "2026-01-04T16:21:00Z"
+    },
+    "acme|AC-0104-0015": {
+      "customer_email": "iris117@example.com",
+      "amount_minor": 28755,
+      "currency": "EUR",
+      "placed_at": "2026-01-04T18:53:00Z"
+    },
+    "acme|AC-0104-0016": {
+      "customer_email": "ella695@example.com",
+      "amount_minor": 56849,
+      "currency": "EUR",
+      "placed_at": "2026-01-04T07:53:00Z"
+    },
+    "acme|AC-0104-0017": {
+      "customer_email": "ella47@example.com",
+      "amount_minor": 69566,
+      "currency": "EUR",
+      "placed_at": "2026-01-04T17:23:00Z"
+    },
+    "acme|AC-0104-0018": {
+      "customer_email": "jon57@example.com",
+      "amount_minor": 52307,
+      "currency": "USD",
+      "placed_at": "2026-01-04T22:48:00Z"
+    },
+    "acme|AC-0104-0019": {
+      "customer_email": "dev786@example.com",
+      "amount_minor": 27294,
+      "currency": "USD",
+      "placed_at": "2026-01-04T11:08:00Z"
+    },
+    "acme|AC-0104-0020": {
+      "customer_email": "finn123@example.com",
+      "amount_minor": 33991,
+      "currency": "USD",
+      "placed_at": "2026-01-04T10:56:00Z"
+    },
+    "acme|AC-0104-0021": {
+      "customer_email": "gia180@example.com",
+      "amount_minor": 65693,
+      "currency": "USD",
+      "placed_at": "2026-01-04T18:44:00Z"
+    },
+    "acme|AC-0104-0022": {
+      "customer_email": "lena236@example.com",
+      "amount_minor": 50334,
+      "currency": "USD",
+      "placed_at": "2026-01-04T15:05:00Z"
+    },
+    "acme|AC-0104-0023": {
+      "customer_email": "lena44@example.com",
+      "amount_minor": 9947,
+      "currency": "EUR",
+      "placed_at": "2026-01-04T12:46:00Z"
+    },
+    "acme|AC-0104-0024": {
+      "customer_email": "ben883@example.com",
+      "amount_minor": 2956,
+      "currency": "EUR",
+      "placed_at": "2026-01-04T13:50:00Z"
+    },
+    "acme|AC-0104-0025": {
+      "customer_email": "jon415@example.com",
+      "amount_minor": 75965,
+      "currency": "EUR",
+      "placed_at": "2026-01-04T13:19:00Z"
+    },
+    "acme|AC-0104-0026": {
+      "customer_email": "gia22@example.com",
+      "amount_minor": 38447,
+      "currency": "EUR",
+      "placed_at": "2026-01-04T07:57:00Z"
+    },
+    "acme|AC-0104-0027": {
+      "customer_email": "jon472@example.com",
+      "amount_minor": 23027,
+      "currency": "EUR",
+      "placed_at": "2026-01-04T19:40:00Z"
+    },
+    "acme|AC-0104-0028": {
+      "customer_email": "ben250@example.com",
+      "amount_minor": 12051,
+      "currency": "EUR",
+      "placed_at": "2026-01-04T13:27:00Z"
+    },
+    "acme|AC-0104-0029": {
+      "customer_email": "iris81@example.com",
+      "amount_minor": 77684,
+      "currency": "EUR",
+      "placed_at": "2026-01-04T12:50:00Z"
+    },
+    "acme|AC-0104-0030": {
+      "customer_email": "finn227@example.com",
+      "amount_minor": 41168,
+      "currency": "EUR",
+      "placed_at": "2026-01-04T18:43:00Z"
+    },
+    "acme|AC-0104-0031": {
+      "customer_email": "iris649@example.com",
+      "amount_minor": 22537,
+      "currency": "EUR",
+      "placed_at": "2026-01-04T07:18:00Z"
+    },
+    "acme|AC-0104-0032": {
+      "customer_email": "dev928@example.com",
+      "amount_minor": 70047,
+      "currency": "USD",
+      "placed_at": "2026-01-04T14:42:00Z"
+    },
+    "acme|AC-0104-0033": {
+      "customer_email": "kai835@example.com",
+      "amount_minor": 46519,
+      "currency": "EUR",
+      "placed_at": "2026-01-04T18:24:00Z"
+    },
+    "bolt|BO-0104-0000": {
+      "customer_email": "jon58@example.com",
+      "amount_minor": 82000,
+      "currency": "JPY",
+      "placed_at": "2026-01-04T10:41:00Z"
+    },
+    "bolt|BO-0104-0001": {
+      "customer_email": "ella473@example.com",
+      "amount_minor": 66997,
+      "currency": "GBP",
+      "placed_at": "2026-01-04T07:15:00Z"
+    },
+    "bolt|BO-0104-0002": {
+      "customer_email": "finn852@example.com",
+      "amount_minor": 5429,
+      "currency": "GBP",
+      "placed_at": "2026-01-04T06:58:00Z"
+    },
+    "bolt|BO-0104-0003": {
+      "customer_email": "ben630@example.com",
+      "amount_minor": 10557,
+      "currency": "GBP",
+      "placed_at": "2026-01-04T17:00:00Z"
+    },
+    "bolt|BO-0104-0004": {
+      "customer_email": "jon568@example.com",
+      "amount_minor": 39800,
+      "currency": "JPY",
+      "placed_at": "2026-01-04T13:53:00Z"
+    },
+    "bolt|BO-0104-0005": {
+      "customer_email": "jon668@example.com",
+      "amount_minor": 46500,
+      "currency": "JPY",
+      "placed_at": "2026-01-04T21:30:00Z"
+    },
+    "bolt|BO-0104-0006": {
+      "customer_email": "hugo514@example.com",
+      "amount_minor": 42643,
+      "currency": "USD",
+      "placed_at": "2026-01-04T16:19:00Z"
+    },
+    "bolt|BO-0104-0007": {
+      "customer_email": "ben831@example.com",
+      "amount_minor": 8609,
+      "currency": "USD",
+      "placed_at": "2026-01-04T13:41:00Z"
+    },
+    "bolt|BO-0104-0008": {
+      "customer_email": "kai177@example.com",
+      "amount_minor": 11553,
+      "currency": "GBP",
+      "placed_at": "2026-01-04T14:36:00Z"
+    },
+    "bolt|BO-0104-0009": {
+      "customer_email": "hugo450@example.com",
+      "amount_minor": 32972,
+      "currency": "USD",
+      "placed_at": "2026-01-04T18:04:00Z"
+    },
+    "bolt|BO-0104-0010": {
+      "customer_email": "finn382@example.com",
+      "amount_minor": 62900,
+      "currency": "JPY",
+      "placed_at": "2026-01-04T08:42:00Z"
+    },
+    "bolt|BO-0104-0011": {
+      "customer_email": "finn696@example.com",
+      "amount_minor": 51279,
+      "currency": "GBP",
+      "placed_at": "2026-01-04T12:58:00Z"
+    },
+    "bolt|BO-0104-0012": {
+      "customer_email": "kai343@example.com",
+      "amount_minor": 81300,
+      "currency": "JPY",
+      "placed_at": "2026-01-04T16:46:00Z"
+    },
+    "bolt|BO-0104-0013": {
+      "customer_email": "iris695@example.com",
+      "amount_minor": 43713,
+      "currency": "USD",
+      "placed_at": "2026-01-04T07:36:00Z"
+    },
+    "bolt|BO-0104-0014": {
+      "customer_email": "lena873@example.com",
+      "amount_minor": 37743,
+      "currency": "GBP",
+      "placed_at": "2026-01-04T10:18:00Z"
+    },
+    "bolt|BO-0104-0015": {
+      "customer_email": "finn84@example.com",
+      "amount_minor": 89900,
+      "currency": "JPY",
+      "placed_at": "2026-01-04T08:33:00Z"
+    },
+    "bolt|BO-0104-0016": {
+      "customer_email": "finn318@example.com",
+      "amount_minor": 14900,
+      "currency": "JPY",
+      "placed_at": "2026-01-04T21:38:00Z"
+    },
+    "bolt|BO-0104-0017": {
+      "customer_email": "jon726@example.com",
+      "amount_minor": 40600,
+      "currency": "JPY",
+      "placed_at": "2026-01-04T08:12:00Z"
+    },
+    "bolt|BO-0104-0018": {
+      "customer_email": "gia659@example.com",
+      "amount_minor": 40777,
+      "currency": "USD",
+      "placed_at": "2026-01-04T15:32:00Z"
+    },
+    "bolt|BO-0104-0019": {
+      "customer_email": "lena849@example.com",
+      "amount_minor": 18250,
+      "currency": "GBP",
+      "placed_at": "2026-01-04T17:26:00Z"
+    },
+    "bolt|BO-0104-0020": {
+      "customer_email": "kai434@example.com",
+      "amount_minor": 10000,
+      "currency": "JPY",
+      "placed_at": "2026-01-04T17:01:00Z"
+    },
+    "bolt|BO-0104-0021": {
+      "customer_email": "ella185@example.com",
+      "amount_minor": 2300,
+      "currency": "JPY",
+      "placed_at": "2026-01-04T12:11:00Z"
+    },
+    "bolt|BO-0104-0022": {
+      "customer_email": "hugo197@example.com",
+      "amount_minor": 45291,
+      "currency": "USD",
+      "placed_at": "2026-01-04T22:10:00Z"
+    },
+    "bolt|BO-0104-0023": {
+      "customer_email": "ben303@example.com",
+      "amount_minor": 18530,
+      "currency": "USD",
+      "placed_at": "2026-01-04T08:38:00Z"
+    },
+    "bolt|BO-0104-0024": {
+      "customer_email": "iris856@example.com",
+      "amount_minor": 67043,
+      "currency": "USD",
+      "placed_at": "2026-01-04T19:09:00Z"
+    },
+    "bolt|BO-0104-0025": {
+      "customer_email": "finn898@example.com",
+      "amount_minor": 4300,
+      "currency": "JPY",
+      "placed_at": "2026-01-04T17:17:00Z"
+    },
+    "bolt|BO-0104-0026": {
+      "customer_email": "chloe167@example.com",
+      "amount_minor": 61600,
+      "currency": "JPY",
+      "placed_at": "2026-01-04T12:25:00Z"
+    },
+    "bolt|BO-0104-0027": {
+      "customer_email": "chloe739@example.com",
+      "amount_minor": 82385,
+      "currency": "USD",
+      "placed_at": "2026-01-04T19:48:00Z"
+    },
+    "bolt|BO-0104-0028": {
+      "customer_email": "finn693@example.com",
+      "amount_minor": 6226,
+      "currency": "GBP",
+      "placed_at": "2026-01-04T13:00:00Z"
+    },
+    "bolt|BO-0104-0029": {
+      "customer_email": "ella771@example.com",
+      "amount_minor": 45900,
+      "currency": "JPY",
+      "placed_at": "2026-01-04T16:25:00Z"
+    },
+    "bolt|BO-0104-0030": {
+      "customer_email": "dev317@example.com",
+      "amount_minor": 24400,
+      "currency": "JPY",
+      "placed_at": "2026-01-04T15:06:00Z"
+    },
+    "bolt|BO-0104-0031": {
+      "customer_email": "kai970@example.com",
+      "amount_minor": 25930,
+      "currency": "GBP",
+      "placed_at": "2026-01-04T12:16:00Z"
+    },
+    "bolt|BO-0104-0032": {
+      "customer_email": "ella797@example.com",
+      "amount_minor": 47700,
+      "currency": "JPY",
+      "placed_at": "2026-01-04T19:07:00Z"
+    },
+    "bolt|BO-0104-0033": {
+      "customer_email": "gia990@example.com",
+      "amount_minor": 66416,
+      "currency": "GBP",
+      "placed_at": "2026-01-04T15:00:00Z"
+    },
+    "bolt|BO-0104-0034": {
+      "customer_email": "jon142@example.com",
+      "amount_minor": 26674,
+      "currency": "USD",
+      "placed_at": "2026-01-04T19:40:00Z"
+    },
+    "bolt|BO-0104-0035": {
+      "customer_email": "hugo896@example.com",
+      "amount_minor": 7339,
+      "currency": "GBP",
+      "placed_at": "2026-01-04T16:56:00Z"
+    },
+    "bolt|BO-0104-0036": {
+      "customer_email": "ben729@example.com",
+      "amount_minor": 73184,
+      "currency": "GBP",
+      "placed_at": "2026-01-04T21:56:00Z"
+    },
+    "bolt|BO-0104-0037": {
+      "customer_email": "chloe280@example.com",
+      "amount_minor": 29600,
+      "currency": "JPY",
+      "placed_at": "2026-01-04T07:25:00Z"
+    },
+    "bolt|BO-0104-0038": {
+      "customer_email": "gia94@example.com",
+      "amount_minor": 67786,
+      "currency": "GBP",
+      "placed_at": "2026-01-04T08:30:00Z"
+    },
+    "cobalt|CO-0104-0000": {
+      "customer_email": "lena481@example.com",
+      "amount_minor": 18691,
+      "currency": "GBP",
+      "placed_at": "2026-01-04T18:57:00Z"
+    },
+    "cobalt|CO-0104-0001": {
+      "customer_email": "ben20@example.com",
+      "amount_minor": 81154,
+      "currency": "EUR",
+      "placed_at": "2026-01-04T06:05:00Z"
+    },
+    "cobalt|CO-0104-0002": {
+      "customer_email": "chloe562@example.com",
+      "amount_minor": 28766,
+      "currency": "EUR",
+      "placed_at": "2026-01-04T20:15:00Z"
+    },
+    "cobalt|CO-0104-0003": {
+      "customer_email": "gia114@example.com",
+      "amount_minor": 80307,
+      "currency": "GBP",
+      "placed_at": "2026-01-04T15:00:00Z"
+    },
+    "cobalt|CO-0104-0004": {
+      "customer_email": "ben49@example.com",
+      "amount_minor": 31647,
+      "currency": "EUR",
+      "placed_at": "2026-01-04T11:08:00Z"
+    },
+    "cobalt|CO-0104-0005": {
+      "customer_email": "jon469@example.com",
+      "amount_minor": 55527,
+      "currency": "USD",
+      "placed_at": "2026-01-04T16:54:00Z"
+    },
+    "cobalt|CO-0104-0006": {
+      "customer_email": "hugo612@example.com",
+      "amount_minor": 15030,
+      "currency": "USD",
+      "placed_at": "2026-01-04T20:16:00Z"
+    },
+    "cobalt|CO-0104-0007": {
+      "customer_email": "iris589@example.com",
+      "amount_minor": 2654,
+      "currency": "GBP",
+      "placed_at": "2026-01-04T16:47:00Z"
+    },
+    "cobalt|CO-0104-0008": {
+      "customer_email": "gia2@example.com",
+      "amount_minor": 19318,
+      "currency": "USD",
+      "placed_at": "2026-01-04T10:58:00Z"
+    },
+    "cobalt|CO-0104-0009": {
+      "customer_email": "jon427@example.com",
+      "amount_minor": 46744,
+      "currency": "GBP",
+      "placed_at": "2026-01-04T10:06:00Z"
+    },
+    "cobalt|CO-0104-0010": {
+      "customer_email": "ben537@example.com",
+      "amount_minor": 87580,
+      "currency": "USD",
+      "placed_at": "2026-01-04T17:24:00Z"
+    },
+    "cobalt|CO-0104-0011": {
+      "customer_email": "iris558@example.com",
+      "amount_minor": 9370,
+      "currency": "EUR",
+      "placed_at": "2026-01-04T22:16:00Z"
+    },
+    "cobalt|CO-0104-0012": {
+      "customer_email": "ava400@example.com",
+      "amount_minor": 67035,
+      "currency": "GBP",
+      "placed_at": "2026-01-04T15:27:00Z"
+    },
+    "cobalt|CO-0104-0013": {
+      "customer_email": "gia383@example.com",
+      "amount_minor": 6206,
+      "currency": "EUR",
+      "placed_at": "2026-01-04T16:50:00Z"
+    },
+    "cobalt|CO-0104-0014": {
+      "customer_email": "ben354@example.com",
+      "amount_minor": 2628,
+      "currency": "EUR",
+      "placed_at": "2026-01-04T12:05:00Z"
+    },
+    "cobalt|CO-0104-0015": {
+      "customer_email": "ben791@example.com",
+      "amount_minor": 86627,
+      "currency": "USD",
+      "placed_at": "2026-01-04T16:43:00Z"
+    },
+    "cobalt|CO-0104-0016": {
+      "customer_email": "ava361@example.com",
+      "amount_minor": 44083,
+      "currency": "GBP",
+      "placed_at": "2026-01-04T08:16:00Z"
+    },
+    "cobalt|CO-0104-0017": {
+      "customer_email": "kai180@example.com",
+      "amount_minor": 44874,
+      "currency": "GBP",
+      "placed_at": "2026-01-04T19:53:00Z"
+    },
+    "cobalt|CO-0104-0018": {
+      "customer_email": "lena491@example.com",
+      "amount_minor": 61399,
+      "currency": "GBP",
+      "placed_at": "2026-01-04T22:44:00Z"
+    },
+    "cobalt|CO-0104-0019": {
+      "customer_email": "chloe65@example.com",
+      "amount_minor": 24391,
+      "currency": "GBP",
+      "placed_at": "2026-01-04T19:50:00Z"
+    },
+    "cobalt|CO-0104-0020": {
+      "customer_email": "ella207@example.com",
+      "amount_minor": 60488,
+      "currency": "GBP",
+      "placed_at": "2026-01-04T06:37:00Z"
+    },
+    "cobalt|CO-0104-0021": {
+      "customer_email": "ava324@example.com",
+      "amount_minor": 26644,
+      "currency": "USD",
+      "placed_at": "2026-01-04T21:07:00Z"
+    },
+    "cobalt|CO-0104-0022": {
+      "customer_email": "iris485@example.com",
+      "amount_minor": 68052,
+      "currency": "EUR",
+      "placed_at": "2026-01-04T12:47:00Z"
+    },
+    "cobalt|CO-0104-0023": {
+      "customer_email": "kai196@example.com",
+      "amount_minor": 5299,
+      "currency": "EUR",
+      "placed_at": "2026-01-04T18:51:00Z"
+    },
+    "cobalt|CO-0104-0024": {
+      "customer_email": "ava887@example.com",
+      "amount_minor": 47289,
+      "currency": "EUR",
+      "placed_at": "2026-01-04T20:42:00Z"
+    },
+    "cobalt|CO-0104-0025": {
+      "customer_email": "ben819@example.com",
+      "amount_minor": 44006,
+      "currency": "GBP",
+      "placed_at": "2026-01-04T10:39:00Z"
+    },
+    "cobalt|CO-0104-0026": {
+      "customer_email": "gia762@example.com",
+      "amount_minor": 57772,
+      "currency": "EUR",
+      "placed_at": "2026-01-04T21:10:00Z"
+    },
+    "cobalt|CO-0104-0027": {
+      "customer_email": "chloe509@example.com",
+      "amount_minor": 51178,
+      "currency": "EUR",
+      "placed_at": "2026-01-04T11:47:00Z"
+    },
+    "cobalt|CO-0104-0028": {
+      "customer_email": "iris274@example.com",
+      "amount_minor": 65711,
+      "currency": "GBP",
+      "placed_at": "2026-01-04T12:16:00Z"
+    },
+    "cobalt|CO-0104-0029": {
+      "customer_email": "gia617@example.com",
+      "amount_minor": 56140,
+      "currency": "USD",
+      "placed_at": "2026-01-04T07:20:00Z"
+    },
+    "cobalt|CO-0104-0030": {
+      "customer_email": "finn106@example.com",
+      "amount_minor": 71996,
+      "currency": "USD",
+      "placed_at": "2026-01-04T11:00:00Z"
+    },
+    "cobalt|CO-0104-0031": {
+      "customer_email": "ella314@example.com",
+      "amount_minor": 43481,
+      "currency": "USD",
+      "placed_at": "2026-01-04T17:16:00Z"
+    },
+    "cobalt|CO-0104-0032": {
+      "customer_email": "gia171@example.com",
+      "amount_minor": 79486,
+      "currency": "EUR",
+      "placed_at": "2026-01-04T18:14:00Z"
+    },
+    "cobalt|CO-0104-0033": {
+      "customer_email": "hugo44@example.com",
+      "amount_minor": 58683,
+      "currency": "GBP",
+      "placed_at": "2026-01-04T11:59:00Z"
+    },
+    "cobalt|CO-0104-0034": {
+      "customer_email": "gia282@example.com",
+      "amount_minor": 46710,
+      "currency": "GBP",
+      "placed_at": "2026-01-04T16:29:00Z"
+    },
+    "cobalt|CO-0104-0035": {
+      "customer_email": "kai653@example.com",
+      "amount_minor": 8018,
+      "currency": "GBP",
+      "placed_at": "2026-01-04T07:16:00Z"
+    },
+    "cobalt|CO-0104-0036": {
+      "customer_email": "lena696@example.com",
+      "amount_minor": 48419,
+      "currency": "EUR",
+      "placed_at": "2026-01-04T14:45:00Z"
+    },
+    "cobalt|CO-0104-0037": {
+      "customer_email": "jon695@example.com",
+      "amount_minor": 4281,
+      "currency": "USD",
+      "placed_at": "2026-01-04T08:26:00Z"
+    },
+    "cobalt|CO-0104-0038": {
+      "customer_email": "ben242@example.com",
+      "amount_minor": 5061,
+      "currency": "EUR",
+      "placed_at": "2026-01-04T08:09:00Z"
+    },
+    "cobalt|CO-0104-0039": {
+      "customer_email": "gia973@example.com",
+      "amount_minor": 48515,
+      "currency": "GBP",
+      "placed_at": "2026-01-04T12:10:00Z"
+    },
+    "acme|AC-0105-0000": {
+      "customer_email": "hugo220@example.com",
+      "amount_minor": 34616,
+      "currency": "EUR",
+      "placed_at": "2026-01-05T18:00:00Z"
+    },
+    "acme|AC-0105-0001": {
+      "customer_email": "ben139@example.com",
+      "amount_minor": 64882,
+      "currency": "EUR",
+      "placed_at": "2026-01-05T09:24:00Z"
+    },
+    "acme|AC-0105-0002": {
+      "customer_email": "lena456@example.com",
+      "amount_minor": 59750,
+      "currency": "USD",
+      "placed_at": "2026-01-05T08:56:00Z"
+    },
+    "acme|AC-0105-0003": {
+      "customer_email": "finn684@example.com",
+      "amount_minor": 89881,
+      "currency": "USD",
+      "placed_at": "2026-01-05T22:30:00Z"
+    },
+    "acme|AC-0105-0004": {
+      "customer_email": "iris298@example.com",
+      "amount_minor": 9011,
+      "currency": "EUR",
+      "placed_at": "2026-01-05T15:23:00Z"
+    },
+    "acme|AC-0105-0005": {
+      "customer_email": "lena950@example.com",
+      "amount_minor": 21144,
+      "currency": "EUR",
+      "placed_at": "2026-01-05T18:08:00Z"
+    },
+    "acme|AC-0105-0006": {
+      "customer_email": "dev125@example.com",
+      "amount_minor": 47881,
+      "currency": "USD",
+      "placed_at": "2026-01-05T14:40:00Z"
+    },
+    "acme|AC-0105-0007": {
+      "customer_email": "hugo27@example.com",
+      "amount_minor": 18402,
+      "currency": "USD",
+      "placed_at": "2026-01-05T10:02:00Z"
+    },
+    "acme|AC-0105-0008": {
+      "customer_email": "finn479@example.com",
+      "amount_minor": 73116,
+      "currency": "EUR",
+      "placed_at": "2026-01-05T15:46:00Z"
+    },
+    "acme|AC-0105-0009": {
+      "customer_email": "ben68@example.com",
+      "amount_minor": 80709,
+      "currency": "USD",
+      "placed_at": "2026-01-05T21:05:00Z"
+    },
+    "acme|AC-0105-0010": {
+      "customer_email": "lena491@example.com",
+      "amount_minor": 52987,
+      "currency": "EUR",
+      "placed_at": "2026-01-05T18:14:00Z"
+    },
+    "acme|AC-0105-0011": {
+      "customer_email": "jon76@example.com",
+      "amount_minor": 54165,
+      "currency": "EUR",
+      "placed_at": "2026-01-05T20:03:00Z"
+    },
+    "acme|AC-0105-0012": {
+      "customer_email": "ben461@example.com",
+      "amount_minor": 42053,
+      "currency": "USD",
+      "placed_at": "2026-01-05T16:57:00Z"
+    },
+    "acme|AC-0105-0013": {
+      "customer_email": "finn132@example.com",
+      "amount_minor": 89643,
+      "currency": "EUR",
+      "placed_at": "2026-01-05T14:49:00Z"
+    },
+    "acme|AC-0105-0014": {
+      "customer_email": "iris933@example.com",
+      "amount_minor": 17412,
+      "currency": "USD",
+      "placed_at": "2026-01-05T13:23:00Z"
+    },
+    "acme|AC-0105-0015": {
+      "customer_email": "chloe312@example.com",
+      "amount_minor": 16774,
+      "currency": "USD",
+      "placed_at": "2026-01-05T14:50:00Z"
+    },
+    "acme|AC-0105-0016": {
+      "customer_email": "lena231@example.com",
+      "amount_minor": 21729,
+      "currency": "USD",
+      "placed_at": "2026-01-05T11:30:00Z"
+    },
+    "acme|AC-0105-0017": {
+      "customer_email": "ella867@example.com",
+      "amount_minor": 68512,
+      "currency": "EUR",
+      "placed_at": "2026-01-05T21:16:00Z"
+    },
+    "acme|AC-0105-0018": {
+      "customer_email": "kai980@example.com",
+      "amount_minor": 33347,
+      "currency": "USD",
+      "placed_at": "2026-01-05T09:21:00Z"
+    },
+    "acme|AC-0105-0019": {
+      "customer_email": "ella630@example.com",
+      "amount_minor": 16906,
+      "currency": "EUR",
+      "placed_at": "2026-01-05T16:40:00Z"
+    },
+    "acme|AC-0105-0020": {
+      "customer_email": "chloe607@example.com",
+      "amount_minor": 66373,
+      "currency": "USD",
+      "placed_at": "2026-01-05T16:56:00Z"
+    },
+    "acme|AC-0105-0021": {
+      "customer_email": "jon738@example.com",
+      "amount_minor": 22939,
+      "currency": "USD",
+      "placed_at": "2026-01-05T17:14:00Z"
+    },
+    "acme|AC-0105-0022": {
+      "customer_email": "ava84@example.com",
+      "amount_minor": 74374,
+      "currency": "EUR",
+      "placed_at": "2026-01-05T06:42:00Z"
+    },
+    "acme|AC-0105-0023": {
+      "customer_email": "jon272@example.com",
+      "amount_minor": 84576,
+      "currency": "USD",
+      "placed_at": "2026-01-05T19:09:00Z"
+    },
+    "acme|AC-0105-0024": {
+      "customer_email": "jon655@example.com",
+      "amount_minor": 75491,
+      "currency": "USD",
+      "placed_at": "2026-01-05T13:06:00Z"
+    },
+    "acme|AC-0105-0025": {
+      "customer_email": "kai559@example.com",
+      "amount_minor": 65778,
+      "currency": "USD",
+      "placed_at": "2026-01-05T21:10:00Z"
+    },
+    "acme|AC-0105-0026": {
+      "customer_email": "ella495@example.com",
+      "amount_minor": 84636,
+      "currency": "EUR",
+      "placed_at": "2026-01-05T22:19:00Z"
+    },
+    "acme|AC-0105-0027": {
+      "customer_email": "hugo75@example.com",
+      "amount_minor": 53727,
+      "currency": "USD",
+      "placed_at": "2026-01-05T11:04:00Z"
+    },
+    "bolt|BO-0105-0000": {
+      "customer_email": "ava298@example.com",
+      "amount_minor": 18965,
+      "currency": "USD",
+      "placed_at": "2026-01-05T07:39:00Z"
+    },
+    "bolt|BO-0105-0001": {
+      "customer_email": "dev986@example.com",
+      "amount_minor": 81158,
+      "currency": "GBP",
+      "placed_at": "2026-01-05T13:08:00Z"
+    },
+    "bolt|BO-0105-0002": {
+      "customer_email": "jon739@example.com",
+      "amount_minor": 43717,
+      "currency": "USD",
+      "placed_at": "2026-01-05T21:56:00Z"
+    },
+    "bolt|BO-0105-0003": {
+      "customer_email": "chloe511@example.com",
+      "amount_minor": 25381,
+      "currency": "GBP",
+      "placed_at": "2026-01-05T19:01:00Z"
+    },
+    "bolt|BO-0105-0004": {
+      "customer_email": "ella510@example.com",
+      "amount_minor": 51500,
+      "currency": "JPY",
+      "placed_at": "2026-01-05T21:00:00Z"
+    },
+    "bolt|BO-0105-0005": {
+      "customer_email": "gia518@example.com",
+      "amount_minor": 12002,
+      "currency": "USD",
+      "placed_at": "2026-01-05T22:07:00Z"
+    },
+    "bolt|BO-0105-0006": {
+      "customer_email": "jon362@example.com",
+      "amount_minor": 32052,
+      "currency": "GBP",
+      "placed_at": "2026-01-05T09:40:00Z"
+    },
+    "bolt|BO-0105-0007": {
+      "customer_email": "hugo612@example.com",
+      "amount_minor": 7124,
+      "currency": "USD",
+      "placed_at": "2026-01-05T10:48:00Z"
+    },
+    "bolt|BO-0105-0008": {
+      "customer_email": "iris9@example.com",
+      "amount_minor": 48600,
+      "currency": "JPY",
+      "placed_at": "2026-01-05T10:52:00Z"
+    },
+    "bolt|BO-0105-0009": {
+      "customer_email": "ella745@example.com",
+      "amount_minor": 56982,
+      "currency": "USD",
+      "placed_at": "2026-01-05T08:17:00Z"
+    },
+    "bolt|BO-0105-0010": {
+      "customer_email": "ava411@example.com",
+      "amount_minor": 53355,
+      "currency": "GBP",
+      "placed_at": "2026-01-05T12:14:00Z"
+    },
+    "bolt|BO-0105-0011": {
+      "customer_email": "dev372@example.com",
+      "amount_minor": 75247,
+      "currency": "USD",
+      "placed_at": "2026-01-05T15:35:00Z"
+    },
+    "bolt|BO-0105-0012": {
+      "customer_email": "iris462@example.com",
+      "amount_minor": 8000,
+      "currency": "JPY",
+      "placed_at": "2026-01-05T12:35:00Z"
+    },
+    "bolt|BO-0105-0013": {
+      "customer_email": "jon697@example.com",
+      "amount_minor": 85000,
+      "currency": "JPY",
+      "placed_at": "2026-01-05T22:52:00Z"
+    },
+    "bolt|BO-0105-0014": {
+      "customer_email": "ben404@example.com",
+      "amount_minor": 13600,
+      "currency": "JPY",
+      "placed_at": "2026-01-05T22:38:00Z"
+    },
+    "bolt|BO-0105-0015": {
+      "customer_email": "finn774@example.com",
+      "amount_minor": 44944,
+      "currency": "GBP",
+      "placed_at": "2026-01-05T15:31:00Z"
+    },
+    "bolt|BO-0105-0016": {
+      "customer_email": "iris412@example.com",
+      "amount_minor": 26590,
+      "currency": "USD",
+      "placed_at": "2026-01-05T16:16:00Z"
+    },
+    "bolt|BO-0105-0017": {
+      "customer_email": "chloe731@example.com",
+      "amount_minor": 5100,
+      "currency": "JPY",
+      "placed_at": "2026-01-05T06:39:00Z"
+    },
+    "bolt|BO-0105-0018": {
+      "customer_email": "hugo153@example.com",
+      "amount_minor": 62594,
+      "currency": "GBP",
+      "placed_at": "2026-01-05T14:51:00Z"
+    },
+    "bolt|BO-0105-0019": {
+      "customer_email": "jon327@example.com",
+      "amount_minor": 14800,
+      "currency": "JPY",
+      "placed_at": "2026-01-05T11:35:00Z"
+    },
+    "bolt|BO-0105-0020": {
+      "customer_email": "jon758@example.com",
+      "amount_minor": 52005,
+      "currency": "USD",
+      "placed_at": "2026-01-05T22:54:00Z"
+    },
+    "bolt|BO-0105-0021": {
+      "customer_email": "iris849@example.com",
+      "amount_minor": 78320,
+      "currency": "GBP",
+      "placed_at": "2026-01-05T11:44:00Z"
+    },
+    "bolt|BO-0105-0022": {
+      "customer_email": "jon307@example.com",
+      "amount_minor": 50600,
+      "currency": "JPY",
+      "placed_at": "2026-01-05T18:05:00Z"
+    },
+    "bolt|BO-0105-0023": {
+      "customer_email": "finn690@example.com",
+      "amount_minor": 2680,
+      "currency": "GBP",
+      "placed_at": "2026-01-05T12:17:00Z"
+    },
+    "bolt|BO-0105-0024": {
+      "customer_email": "ella816@example.com",
+      "amount_minor": 55096,
+      "currency": "USD",
+      "placed_at": "2026-01-05T15:57:00Z"
+    },
+    "bolt|BO-0105-0025": {
+      "customer_email": "hugo272@example.com",
+      "amount_minor": 3200,
+      "currency": "JPY",
+      "placed_at": "2026-01-05T16:11:00Z"
+    },
+    "bolt|BO-0105-0026": {
+      "customer_email": "lena53@example.com",
+      "amount_minor": 59600,
+      "currency": "JPY",
+      "placed_at": "2026-01-05T09:53:00Z"
+    },
+    "bolt|BO-0105-0027": {
+      "customer_email": "kai739@example.com",
+      "amount_minor": 17900,
+      "currency": "JPY",
+      "placed_at": "2026-01-05T14:56:00Z"
+    },
+    "bolt|BO-0105-0028": {
+      "customer_email": "kai249@example.com",
+      "amount_minor": 15600,
+      "currency": "JPY",
+      "placed_at": "2026-01-05T20:01:00Z"
+    },
+    "bolt|BO-0105-0029": {
+      "customer_email": "lena113@example.com",
+      "amount_minor": 75547,
+      "currency": "USD",
+      "placed_at": "2026-01-05T22:10:00Z"
+    },
+    "bolt|BO-0105-0030": {
+      "customer_email": "finn429@example.com",
+      "amount_minor": 2982,
+      "currency": "USD",
+      "placed_at": "2026-01-05T13:31:00Z"
+    },
+    "bolt|BO-0105-0031": {
+      "customer_email": "dev421@example.com",
+      "amount_minor": 54627,
+      "currency": "USD",
+      "placed_at": "2026-01-05T17:47:00Z"
+    },
+    "bolt|BO-0105-0032": {
+      "customer_email": "lena745@example.com",
+      "amount_minor": 48700,
+      "currency": "JPY",
+      "placed_at": "2026-01-05T20:53:00Z"
+    },
+    "bolt|BO-0105-0033": {
+      "customer_email": "dev575@example.com",
+      "amount_minor": 18598,
+      "currency": "USD",
+      "placed_at": "2026-01-05T14:51:00Z"
+    },
+    "bolt|BO-0105-0034": {
+      "customer_email": "iris386@example.com",
+      "amount_minor": 87299,
+      "currency": "GBP",
+      "placed_at": "2026-01-05T14:09:00Z"
+    },
+    "bolt|BO-0105-0035": {
+      "customer_email": "iris351@example.com",
+      "amount_minor": 23199,
+      "currency": "GBP",
+      "placed_at": "2026-01-05T13:50:00Z"
+    },
+    "bolt|BO-0105-0036": {
+      "customer_email": "lena698@example.com",
+      "amount_minor": 69700,
+      "currency": "JPY",
+      "placed_at": "2026-01-05T19:10:00Z"
+    },
+    "bolt|BO-0105-0037": {
+      "customer_email": "dev981@example.com",
+      "amount_minor": 62900,
+      "currency": "JPY",
+      "placed_at": "2026-01-05T14:15:00Z"
+    },
+    "bolt|BO-0105-0038": {
+      "customer_email": "ella231@example.com",
+      "amount_minor": 37069,
+      "currency": "USD",
+      "placed_at": "2026-01-05T15:31:00Z"
+    },
+    "cobalt|CO-0105-0000": {
+      "customer_email": "ella766@example.com",
+      "amount_minor": 58783,
+      "currency": "EUR",
+      "placed_at": "2026-01-05T17:11:00Z"
+    },
+    "cobalt|CO-0105-0001": {
+      "customer_email": "iris278@example.com",
+      "amount_minor": 28547,
+      "currency": "EUR",
+      "placed_at": "2026-01-05T09:26:00Z"
+    },
+    "cobalt|CO-0105-0002": {
+      "customer_email": "ben631@example.com",
+      "amount_minor": 36101,
+      "currency": "GBP",
+      "placed_at": "2026-01-05T08:20:00Z"
+    },
+    "cobalt|CO-0105-0003": {
+      "customer_email": "dev52@example.com",
+      "amount_minor": 77417,
+      "currency": "GBP",
+      "placed_at": "2026-01-05T10:05:00Z"
+    },
+    "cobalt|CO-0105-0004": {
+      "customer_email": "kai239@example.com",
+      "amount_minor": 70104,
+      "currency": "GBP",
+      "placed_at": "2026-01-05T09:51:00Z"
+    },
+    "cobalt|CO-0105-0005": {
+      "customer_email": "finn735@example.com",
+      "amount_minor": 13633,
+      "currency": "USD",
+      "placed_at": "2026-01-05T13:03:00Z"
+    },
+    "cobalt|CO-0105-0006": {
+      "customer_email": "chloe6@example.com",
+      "amount_minor": 13678,
+      "currency": "EUR",
+      "placed_at": "2026-01-05T17:37:00Z"
+    },
+    "cobalt|CO-0105-0007": {
+      "customer_email": "kai958@example.com",
+      "amount_minor": 21201,
+      "currency": "GBP",
+      "placed_at": "2026-01-05T12:56:00Z"
+    },
+    "cobalt|CO-0105-0008": {
+      "customer_email": "dev775@example.com",
+      "amount_minor": 63080,
+      "currency": "EUR",
+      "placed_at": "2026-01-05T17:06:00Z"
+    },
+    "cobalt|CO-0105-0009": {
+      "customer_email": "kai61@example.com",
+      "amount_minor": 42596,
+      "currency": "EUR",
+      "placed_at": "2026-01-05T10:52:00Z"
+    },
+    "cobalt|CO-0105-0010": {
+      "customer_email": "dev548@example.com",
+      "amount_minor": 85998,
+      "currency": "USD",
+      "placed_at": "2026-01-05T15:47:00Z"
+    },
+    "cobalt|CO-0105-0011": {
+      "customer_email": "chloe428@example.com",
+      "amount_minor": 5388,
+      "currency": "GBP",
+      "placed_at": "2026-01-05T21:35:00Z"
+    },
+    "cobalt|CO-0105-0012": {
+      "customer_email": "gia807@example.com",
+      "amount_minor": 5263,
+      "currency": "USD",
+      "placed_at": "2026-01-05T20:16:00Z"
+    },
+    "cobalt|CO-0105-0013": {
+      "customer_email": "lena986@example.com",
+      "amount_minor": 24920,
+      "currency": "EUR",
+      "placed_at": "2026-01-05T21:59:00Z"
+    },
+    "cobalt|CO-0105-0014": {
+      "customer_email": "ella582@example.com",
+      "amount_minor": 5410,
+      "currency": "EUR",
+      "placed_at": "2026-01-05T06:09:00Z"
+    },
+    "cobalt|CO-0105-0015": {
+      "customer_email": "finn292@example.com",
+      "amount_minor": 14564,
+      "currency": "GBP",
+      "placed_at": "2026-01-05T21:50:00Z"
+    },
+    "cobalt|CO-0105-0016": {
+      "customer_email": "iris506@example.com",
+      "amount_minor": 84558,
+      "currency": "EUR",
+      "placed_at": "2026-01-05T15:16:00Z"
+    },
+    "cobalt|CO-0105-0017": {
+      "customer_email": "ella198@example.com",
+      "amount_minor": 67588,
+      "currency": "USD",
+      "placed_at": "2026-01-05T13:59:00Z"
+    },
+    "cobalt|CO-0105-0018": {
+      "customer_email": "lena470@example.com",
+      "amount_minor": 43843,
+      "currency": "USD",
+      "placed_at": "2026-01-05T08:46:00Z"
+    },
+    "cobalt|CO-0105-0019": {
+      "customer_email": "chloe15@example.com",
+      "amount_minor": 34220,
+      "currency": "GBP",
+      "placed_at": "2026-01-05T18:15:00Z"
+    },
+    "cobalt|CO-0105-0020": {
+      "customer_email": "ella582@example.com",
+      "amount_minor": 44685,
+      "currency": "GBP",
+      "placed_at": "2026-01-05T19:29:00Z"
+    },
+    "cobalt|CO-0105-0021": {
+      "customer_email": "jon877@example.com",
+      "amount_minor": 25818,
+      "currency": "GBP",
+      "placed_at": "2026-01-05T08:59:00Z"
+    },
+    "cobalt|CO-0105-0022": {
+      "customer_email": "gia528@example.com",
+      "amount_minor": 53648,
+      "currency": "GBP",
+      "placed_at": "2026-01-05T20:06:00Z"
+    },
+    "cobalt|CO-0105-0023": {
+      "customer_email": "kai98@example.com",
+      "amount_minor": 11868,
+      "currency": "EUR",
+      "placed_at": "2026-01-05T12:50:00Z"
+    },
+    "cobalt|CO-0105-0024": {
+      "customer_email": "finn959@example.com",
+      "amount_minor": 18930,
+      "currency": "USD",
+      "placed_at": "2026-01-05T14:08:00Z"
+    },
+    "cobalt|CO-0105-0025": {
+      "customer_email": "gia242@example.com",
+      "amount_minor": 1395,
+      "currency": "USD",
+      "placed_at": "2026-01-05T10:27:00Z"
+    },
+    "cobalt|CO-0105-0026": {
+      "customer_email": "finn310@example.com",
+      "amount_minor": 35495,
+      "currency": "EUR",
+      "placed_at": "2026-01-05T22:16:00Z"
+    },
+    "acme|AC-0106-0000": {
+      "customer_email": "chloe466@example.com",
+      "amount_minor": 18007,
+      "currency": "USD",
+      "placed_at": "2026-01-06T14:09:00Z"
+    },
+    "acme|AC-0106-0001": {
+      "customer_email": "iris935@example.com",
+      "amount_minor": 55005,
+      "currency": "EUR",
+      "placed_at": "2026-01-06T17:58:00Z"
+    },
+    "acme|AC-0106-0002": {
+      "customer_email": "kai846@example.com",
+      "amount_minor": 70953,
+      "currency": "EUR",
+      "placed_at": "2026-01-06T19:41:00Z"
+    },
+    "acme|AC-0106-0003": {
+      "customer_email": "jon895@example.com",
+      "amount_minor": 32935,
+      "currency": "USD",
+      "placed_at": "2026-01-06T17:36:00Z"
+    },
+    "acme|AC-0106-0004": {
+      "customer_email": "iris721@example.com",
+      "amount_minor": 69379,
+      "currency": "USD",
+      "placed_at": "2026-01-06T13:37:00Z"
+    },
+    "acme|AC-0106-0005": {
+      "customer_email": "jon115@example.com",
+      "amount_minor": 10737,
+      "currency": "EUR",
+      "placed_at": "2026-01-06T21:39:00Z"
+    },
+    "acme|AC-0106-0006": {
+      "customer_email": "iris208@example.com",
+      "amount_minor": 72281,
+      "currency": "USD",
+      "placed_at": "2026-01-06T21:24:00Z"
+    },
+    "acme|AC-0106-0007": {
+      "customer_email": "iris453@example.com",
+      "amount_minor": 22066,
+      "currency": "USD",
+      "placed_at": "2026-01-06T11:35:00Z"
+    },
+    "acme|AC-0106-0008": {
+      "customer_email": "lena598@example.com",
+      "amount_minor": 89667,
+      "currency": "USD",
+      "placed_at": "2026-01-06T09:30:00Z"
+    },
+    "acme|AC-0106-0009": {
+      "customer_email": "iris457@example.com",
+      "amount_minor": 12419,
+      "currency": "EUR",
+      "placed_at": "2026-01-06T21:20:00Z"
+    },
+    "acme|AC-0106-0010": {
+      "customer_email": "iris426@example.com",
+      "amount_minor": 59932,
+      "currency": "USD",
+      "placed_at": "2026-01-06T08:15:00Z"
+    },
+    "acme|AC-0106-0011": {
+      "customer_email": "iris474@example.com",
+      "amount_minor": 74412,
+      "currency": "EUR",
+      "placed_at": "2026-01-06T06:59:00Z"
+    },
+    "acme|AC-0106-0012": {
+      "customer_email": "ella837@example.com",
+      "amount_minor": 3353,
+      "currency": "EUR",
+      "placed_at": "2026-01-06T12:45:00Z"
+    },
+    "acme|AC-0106-0013": {
+      "customer_email": "ben47@example.com",
+      "amount_minor": 29060,
+      "currency": "USD",
+      "placed_at": "2026-01-06T15:52:00Z"
+    },
+    "acme|AC-0106-0014": {
+      "customer_email": "ben555@example.com",
+      "amount_minor": 45358,
+      "currency": "EUR",
+      "placed_at": "2026-01-06T17:57:00Z"
+    },
+    "acme|AC-0106-0015": {
+      "customer_email": "hugo33@example.com",
+      "amount_minor": 9546,
+      "currency": "USD",
+      "placed_at": "2026-01-06T22:49:00Z"
+    },
+    "acme|AC-0106-0016": {
+      "customer_email": "chloe785@example.com",
+      "amount_minor": 54091,
+      "currency": "EUR",
+      "placed_at": "2026-01-06T09:04:00Z"
+    },
+    "acme|AC-0106-0017": {
+      "customer_email": "gia460@example.com",
+      "amount_minor": 49581,
+      "currency": "EUR",
+      "placed_at": "2026-01-06T22:56:00Z"
+    },
+    "acme|AC-0106-0018": {
+      "customer_email": "kai988@example.com",
+      "amount_minor": 50036,
+      "currency": "EUR",
+      "placed_at": "2026-01-06T07:22:00Z"
+    },
+    "acme|AC-0106-0019": {
+      "customer_email": "finn122@example.com",
+      "amount_minor": 86160,
+      "currency": "USD",
+      "placed_at": "2026-01-06T20:40:00Z"
+    },
+    "acme|AC-0106-0020": {
+      "customer_email": "iris131@example.com",
+      "amount_minor": 70919,
+      "currency": "USD",
+      "placed_at": "2026-01-06T12:42:00Z"
+    },
+    "acme|AC-0106-0021": {
+      "customer_email": "ava306@example.com",
+      "amount_minor": 955,
+      "currency": "USD",
+      "placed_at": "2026-01-06T18:54:00Z"
+    },
+    "acme|AC-0106-0022": {
+      "customer_email": "iris435@example.com",
+      "amount_minor": 88776,
+      "currency": "EUR",
+      "placed_at": "2026-01-06T18:16:00Z"
+    },
+    "acme|AC-0106-0023": {
+      "customer_email": "hugo355@example.com",
+      "amount_minor": 30602,
+      "currency": "EUR",
+      "placed_at": "2026-01-06T10:13:00Z"
+    },
+    "acme|AC-0106-0024": {
+      "customer_email": "lena784@example.com",
+      "amount_minor": 36629,
+      "currency": "USD",
+      "placed_at": "2026-01-06T09:13:00Z"
+    },
+    "acme|AC-0106-0025": {
+      "customer_email": "kai430@example.com",
+      "amount_minor": 4722,
+      "currency": "USD",
+      "placed_at": "2026-01-06T19:48:00Z"
+    },
+    "acme|AC-0106-0026": {
+      "customer_email": "ben104@example.com",
+      "amount_minor": 32044,
+      "currency": "USD",
+      "placed_at": "2026-01-06T09:31:00Z"
+    },
+    "acme|AC-0106-0027": {
+      "customer_email": "kai721@example.com",
+      "amount_minor": 59015,
+      "currency": "USD",
+      "placed_at": "2026-01-06T16:12:00Z"
+    },
+    "acme|AC-0106-0028": {
+      "customer_email": "ava412@example.com",
+      "amount_minor": 32577,
+      "currency": "USD",
+      "placed_at": "2026-01-06T18:38:00Z"
+    },
+    "acme|AC-0106-0029": {
+      "customer_email": "dev773@example.com",
+      "amount_minor": 31215,
+      "currency": "EUR",
+      "placed_at": "2026-01-06T15:12:00Z"
+    },
+    "acme|AC-0106-0030": {
+      "customer_email": "ella240@example.com",
+      "amount_minor": 18867,
+      "currency": "USD",
+      "placed_at": "2026-01-06T14:35:00Z"
+    },
+    "acme|AC-0106-0031": {
+      "customer_email": "kai839@example.com",
+      "amount_minor": 76190,
+      "currency": "EUR",
+      "placed_at": "2026-01-06T16:12:00Z"
+    },
+    "bolt|BO-0106-0000": {
+      "customer_email": "chloe773@example.com",
+      "amount_minor": 39806,
+      "currency": "USD",
+      "placed_at": "2026-01-06T12:25:00Z"
+    },
+    "bolt|BO-0106-0001": {
+      "customer_email": "dev308@example.com",
+      "amount_minor": 25100,
+      "currency": "JPY",
+      "placed_at": "2026-01-06T20:29:00Z"
+    },
+    "bolt|BO-0106-0002": {
+      "customer_email": "ava576@example.com",
+      "amount_minor": 83000,
+      "currency": "JPY",
+      "placed_at": "2026-01-06T13:54:00Z"
+    },
+    "bolt|BO-0106-0003": {
+      "customer_email": "iris138@example.com",
+      "amount_minor": 55092,
+      "currency": "GBP",
+      "placed_at": "2026-01-06T15:30:00Z"
+    },
+    "bolt|BO-0106-0004": {
+      "customer_email": "dev339@example.com",
+      "amount_minor": 32331,
+      "currency": "GBP",
+      "placed_at": "2026-01-06T10:21:00Z"
+    },
+    "bolt|BO-0106-0005": {
+      "customer_email": "finn95@example.com",
+      "amount_minor": 46500,
+      "currency": "JPY",
+      "placed_at": "2026-01-06T20:27:00Z"
+    },
+    "bolt|BO-0106-0006": {
+      "customer_email": "gia690@example.com",
+      "amount_minor": 5700,
+      "currency": "JPY",
+      "placed_at": "2026-01-06T10:34:00Z"
+    },
+    "bolt|BO-0106-0007": {
+      "customer_email": "ben193@example.com",
+      "amount_minor": 4600,
+      "currency": "JPY",
+      "placed_at": "2026-01-06T20:54:00Z"
+    },
+    "bolt|BO-0106-0008": {
+      "customer_email": "hugo214@example.com",
+      "amount_minor": 57700,
+      "currency": "JPY",
+      "placed_at": "2026-01-06T09:42:00Z"
+    },
+    "bolt|BO-0106-0009": {
+      "customer_email": "ava217@example.com",
+      "amount_minor": 40239,
+      "currency": "GBP",
+      "placed_at": "2026-01-06T22:19:00Z"
+    },
+    "bolt|BO-0106-0010": {
+      "customer_email": "hugo937@example.com",
+      "amount_minor": 15876,
+      "currency": "USD",
+      "placed_at": "2026-01-06T18:44:00Z"
+    },
+    "bolt|BO-0106-0011": {
+      "customer_email": "dev407@example.com",
+      "amount_minor": 79720,
+      "currency": "USD",
+      "placed_at": "2026-01-06T18:00:00Z"
+    },
+    "bolt|BO-0106-0012": {
+      "customer_email": "ella390@example.com",
+      "amount_minor": 72862,
+      "currency": "USD",
+      "placed_at": "2026-01-06T11:29:00Z"
+    },
+    "bolt|BO-0106-0013": {
+      "customer_email": "finn316@example.com",
+      "amount_minor": 70446,
+      "currency": "GBP",
+      "placed_at": "2026-01-06T17:04:00Z"
+    },
+    "bolt|BO-0106-0014": {
+      "customer_email": "hugo478@example.com",
+      "amount_minor": 47639,
+      "currency": "GBP",
+      "placed_at": "2026-01-06T14:45:00Z"
+    },
+    "bolt|BO-0106-0015": {
+      "customer_email": "finn937@example.com",
+      "amount_minor": 62037,
+      "currency": "USD",
+      "placed_at": "2026-01-06T18:59:00Z"
+    },
+    "bolt|BO-0106-0016": {
+      "customer_email": "gia47@example.com",
+      "amount_minor": 49089,
+      "currency": "USD",
+      "placed_at": "2026-01-06T11:20:00Z"
+    },
+    "bolt|BO-0106-0017": {
+      "customer_email": "ava268@example.com",
+      "amount_minor": 76400,
+      "currency": "JPY",
+      "placed_at": "2026-01-06T08:29:00Z"
+    },
+    "bolt|BO-0106-0018": {
+      "customer_email": "gia303@example.com",
+      "amount_minor": 59800,
+      "currency": "JPY",
+      "placed_at": "2026-01-06T18:17:00Z"
+    },
+    "bolt|BO-0106-0019": {
+      "customer_email": "dev389@example.com",
+      "amount_minor": 26215,
+      "currency": "USD",
+      "placed_at": "2026-01-06T11:37:00Z"
+    },
+    "bolt|BO-0106-0020": {
+      "customer_email": "kai967@example.com",
+      "amount_minor": 51600,
+      "currency": "JPY",
+      "placed_at": "2026-01-06T15:23:00Z"
+    },
+    "bolt|BO-0106-0021": {
+      "customer_email": "hugo990@example.com",
+      "amount_minor": 26800,
+      "currency": "JPY",
+      "placed_at": "2026-01-06T19:01:00Z"
+    },
+    "bolt|BO-0106-0022": {
+      "customer_email": "hugo173@example.com",
+      "amount_minor": 76200,
+      "currency": "JPY",
+      "placed_at": "2026-01-06T14:22:00Z"
+    },
+    "bolt|BO-0106-0023": {
+      "customer_email": "lena560@example.com",
+      "amount_minor": 17800,
+      "currency": "JPY",
+      "placed_at": "2026-01-06T08:23:00Z"
+    },
+    "bolt|BO-0106-0024": {
+      "customer_email": "iris658@example.com",
+      "amount_minor": 24623,
+      "currency": "GBP",
+      "placed_at": "2026-01-06T21:38:00Z"
+    },
+    "bolt|BO-0106-0025": {
+      "customer_email": "ben968@example.com",
+      "amount_minor": 69174,
+      "currency": "USD",
+      "placed_at": "2026-01-06T06:34:00Z"
+    },
+    "bolt|BO-0106-0026": {
+      "customer_email": "gia141@example.com",
+      "amount_minor": 78700,
+      "currency": "JPY",
+      "placed_at": "2026-01-06T06:06:00Z"
+    },
+    "bolt|BO-0106-0027": {
+      "customer_email": "chloe10@example.com",
+      "amount_minor": 7500,
+      "currency": "JPY",
+      "placed_at": "2026-01-06T18:04:00Z"
+    },
+    "bolt|BO-0106-0028": {
+      "customer_email": "finn62@example.com",
+      "amount_minor": 66787,
+      "currency": "USD",
+      "placed_at": "2026-01-06T13:46:00Z"
+    },
+    "bolt|BO-0106-0029": {
+      "customer_email": "jon935@example.com",
+      "amount_minor": 68700,
+      "currency": "JPY",
+      "placed_at": "2026-01-06T21:56:00Z"
+    },
+    "bolt|BO-0106-0030": {
+      "customer_email": "ava7@example.com",
+      "amount_minor": 86913,
+      "currency": "GBP",
+      "placed_at": "2026-01-06T14:19:00Z"
+    },
+    "bolt|BO-0106-0031": {
+      "customer_email": "ava543@example.com",
+      "amount_minor": 42600,
+      "currency": "JPY",
+      "placed_at": "2026-01-06T06:12:00Z"
+    },
+    "bolt|BO-0106-0032": {
+      "customer_email": "ella18@example.com",
+      "amount_minor": 55300,
+      "currency": "JPY",
+      "placed_at": "2026-01-06T22:40:00Z"
+    },
+    "bolt|BO-0106-0033": {
+      "customer_email": "chloe110@example.com",
+      "amount_minor": 44500,
+      "currency": "JPY",
+      "placed_at": "2026-01-06T19:45:00Z"
+    },
+    "bolt|BO-0106-0034": {
+      "customer_email": "dev197@example.com",
+      "amount_minor": 69232,
+      "currency": "USD",
+      "placed_at": "2026-01-06T08:32:00Z"
+    },
+    "bolt|BO-0106-0035": {
+      "customer_email": "finn274@example.com",
+      "amount_minor": 26300,
+      "currency": "JPY",
+      "placed_at": "2026-01-06T19:54:00Z"
+    },
+    "bolt|BO-0106-0036": {
+      "customer_email": "gia471@example.com",
+      "amount_minor": 10857,
+      "currency": "GBP",
+      "placed_at": "2026-01-06T12:22:00Z"
+    },
+    "bolt|BO-0106-0037": {
+      "customer_email": "ella701@example.com",
+      "amount_minor": 71800,
+      "currency": "JPY",
+      "placed_at": "2026-01-06T09:51:00Z"
+    },
+    "cobalt|CO-0106-0000": {
+      "customer_email": "ben701@example.com",
+      "amount_minor": 6602,
+      "currency": "EUR",
+      "placed_at": "2026-01-06T21:46:00Z"
+    },
+    "cobalt|CO-0106-0001": {
+      "customer_email": "kai34@example.com",
+      "amount_minor": 71676,
+      "currency": "EUR",
+      "placed_at": "2026-01-06T15:37:00Z"
+    },
+    "cobalt|CO-0106-0002": {
+      "customer_email": "dev602@example.com",
+      "amount_minor": 41720,
+      "currency": "USD",
+      "placed_at": "2026-01-06T06:16:00Z"
+    },
+    "cobalt|CO-0106-0003": {
+      "customer_email": "ben307@example.com",
+      "amount_minor": 52705,
+      "currency": "USD",
+      "placed_at": "2026-01-06T21:51:00Z"
+    },
+    "cobalt|CO-0106-0004": {
+      "customer_email": "jon855@example.com",
+      "amount_minor": 74419,
+      "currency": "USD",
+      "placed_at": "2026-01-06T10:06:00Z"
+    },
+    "cobalt|CO-0106-0005": {
+      "customer_email": "iris340@example.com",
+      "amount_minor": 89240,
+      "currency": "EUR",
+      "placed_at": "2026-01-06T21:18:00Z"
+    },
+    "cobalt|CO-0106-0006": {
+      "customer_email": "lena742@example.com",
+      "amount_minor": 18843,
+      "currency": "EUR",
+      "placed_at": "2026-01-06T19:29:00Z"
+    },
+    "cobalt|CO-0106-0007": {
+      "customer_email": "finn55@example.com",
+      "amount_minor": 66139,
+      "currency": "USD",
+      "placed_at": "2026-01-06T18:43:00Z"
+    },
+    "cobalt|CO-0106-0008": {
+      "customer_email": "ben349@example.com",
+      "amount_minor": 57790,
+      "currency": "USD",
+      "placed_at": "2026-01-06T09:57:00Z"
+    },
+    "cobalt|CO-0106-0009": {
+      "customer_email": "jon407@example.com",
+      "amount_minor": 80960,
+      "currency": "GBP",
+      "placed_at": "2026-01-06T22:17:00Z"
+    },
+    "cobalt|CO-0106-0010": {
+      "customer_email": "ella803@example.com",
+      "amount_minor": 4383,
+      "currency": "EUR",
+      "placed_at": "2026-01-06T16:49:00Z"
+    },
+    "cobalt|CO-0106-0011": {
+      "customer_email": "finn567@example.com",
+      "amount_minor": 64804,
+      "currency": "EUR",
+      "placed_at": "2026-01-06T09:53:00Z"
+    },
+    "cobalt|CO-0106-0012": {
+      "customer_email": "kai600@example.com",
+      "amount_minor": 57103,
+      "currency": "EUR",
+      "placed_at": "2026-01-06T09:10:00Z"
+    },
+    "cobalt|CO-0106-0013": {
+      "customer_email": "jon303@example.com",
+      "amount_minor": 50316,
+      "currency": "GBP",
+      "placed_at": "2026-01-06T07:27:00Z"
+    },
+    "cobalt|CO-0106-0014": {
+      "customer_email": "ella158@example.com",
+      "amount_minor": 10134,
+      "currency": "USD",
+      "placed_at": "2026-01-06T07:24:00Z"
+    },
+    "cobalt|CO-0106-0015": {
+      "customer_email": "lena399@example.com",
+      "amount_minor": 83586,
+      "currency": "EUR",
+      "placed_at": "2026-01-06T08:37:00Z"
+    },
+    "cobalt|CO-0106-0016": {
+      "customer_email": "ben6@example.com",
+      "amount_minor": 47777,
+      "currency": "EUR",
+      "placed_at": "2026-01-06T07:49:00Z"
+    },
+    "cobalt|CO-0106-0017": {
+      "customer_email": "ella105@example.com",
+      "amount_minor": 58792,
+      "currency": "EUR",
+      "placed_at": "2026-01-06T12:08:00Z"
+    },
+    "cobalt|CO-0106-0018": {
+      "customer_email": "gia460@example.com",
+      "amount_minor": 11942,
+      "currency": "USD",
+      "placed_at": "2026-01-06T09:11:00Z"
+    },
+    "cobalt|CO-0106-0019": {
+      "customer_email": "gia106@example.com",
+      "amount_minor": 73210,
+      "currency": "GBP",
+      "placed_at": "2026-01-06T14:44:00Z"
+    },
+    "cobalt|CO-0106-0020": {
+      "customer_email": "iris96@example.com",
+      "amount_minor": 12246,
+      "currency": "USD",
+      "placed_at": "2026-01-06T12:02:00Z"
+    },
+    "cobalt|CO-0106-0021": {
+      "customer_email": "finn885@example.com",
+      "amount_minor": 78886,
+      "currency": "GBP",
+      "placed_at": "2026-01-06T19:23:00Z"
+    },
+    "cobalt|CO-0106-0022": {
+      "customer_email": "gia398@example.com",
+      "amount_minor": 2117,
+      "currency": "EUR",
+      "placed_at": "2026-01-06T10:58:00Z"
+    },
+    "cobalt|CO-0106-0023": {
+      "customer_email": "dev586@example.com",
+      "amount_minor": 73839,
+      "currency": "USD",
+      "placed_at": "2026-01-06T21:26:00Z"
+    },
+    "cobalt|CO-0106-0024": {
+      "customer_email": "gia174@example.com",
+      "amount_minor": 22727,
+      "currency": "GBP",
+      "placed_at": "2026-01-06T17:41:00Z"
+    },
+    "cobalt|CO-0106-0025": {
+      "customer_email": "ella505@example.com",
+      "amount_minor": 35747,
+      "currency": "USD",
+      "placed_at": "2026-01-06T11:08:00Z"
+    },
+    "cobalt|CO-0106-0026": {
+      "customer_email": "gia283@example.com",
+      "amount_minor": 8792,
+      "currency": "USD",
+      "placed_at": "2026-01-06T08:51:00Z"
+    },
+    "cobalt|CO-0106-0027": {
+      "customer_email": "ben370@example.com",
+      "amount_minor": 39789,
+      "currency": "EUR",
+      "placed_at": "2026-01-06T14:15:00Z"
+    },
+    "cobalt|CO-0106-0028": {
+      "customer_email": "kai508@example.com",
+      "amount_minor": 32821,
+      "currency": "EUR",
+      "placed_at": "2026-01-06T18:18:00Z"
+    },
+    "cobalt|CO-0106-0029": {
+      "customer_email": "hugo110@example.com",
+      "amount_minor": 82328,
+      "currency": "GBP",
+      "placed_at": "2026-01-06T09:20:00Z"
+    },
+    "cobalt|CO-0106-0030": {
+      "customer_email": "gia341@example.com",
+      "amount_minor": 40432,
+      "currency": "USD",
+      "placed_at": "2026-01-06T06:06:00Z"
+    },
+    "cobalt|CO-0106-0031": {
+      "customer_email": "finn451@example.com",
+      "amount_minor": 50292,
+      "currency": "GBP",
+      "placed_at": "2026-01-06T19:43:00Z"
+    },
+    "cobalt|CO-0106-0032": {
+      "customer_email": "kai998@example.com",
+      "amount_minor": 56941,
+      "currency": "EUR",
+      "placed_at": "2026-01-06T19:55:00Z"
+    },
+    "cobalt|CO-0106-0033": {
+      "customer_email": "finn618@example.com",
+      "amount_minor": 18342,
+      "currency": "GBP",
+      "placed_at": "2026-01-06T11:07:00Z"
+    },
+    "cobalt|CO-0106-0034": {
+      "customer_email": "finn182@example.com",
+      "amount_minor": 26826,
+      "currency": "GBP",
+      "placed_at": "2026-01-06T14:10:00Z"
+    },
+    "cobalt|CO-0106-0035": {
+      "customer_email": "lena712@example.com",
+      "amount_minor": 42330,
+      "currency": "EUR",
+      "placed_at": "2026-01-06T10:58:00Z"
+    },
+    "cobalt|CO-0106-0036": {
+      "customer_email": "jon801@example.com",
+      "amount_minor": 64857,
+      "currency": "GBP",
+      "placed_at": "2026-01-06T22:30:00Z"
+    },
+    "cobalt|CO-0106-0037": {
+      "customer_email": "ella837@example.com",
+      "amount_minor": 43214,
+      "currency": "USD",
+      "placed_at": "2026-01-06T12:25:00Z"
+    },
+    "cobalt|CO-0106-0038": {
+      "customer_email": "jon205@example.com",
+      "amount_minor": 48343,
+      "currency": "EUR",
+      "placed_at": "2026-01-06T07:56:00Z"
+    },
+    "cobalt|CO-0106-0039": {
+      "customer_email": "kai787@example.com",
+      "amount_minor": 71716,
+      "currency": "GBP",
+      "placed_at": "2026-01-06T09:04:00Z"
+    },
+    "acme|AC-0107-0000": {
+      "customer_email": "iris519@example.com",
+      "amount_minor": 76815,
+      "currency": "EUR",
+      "placed_at": "2026-01-07T12:50:00Z"
+    },
+    "acme|AC-0107-0001": {
+      "customer_email": "finn719@example.com",
+      "amount_minor": 71756,
+      "currency": "EUR",
+      "placed_at": "2026-01-07T06:37:00Z"
+    },
+    "acme|AC-0107-0002": {
+      "customer_email": "dev674@example.com",
+      "amount_minor": 14835,
+      "currency": "USD",
+      "placed_at": "2026-01-07T19:07:00Z"
+    },
+    "acme|AC-0107-0003": {
+      "customer_email": "jon46@example.com",
+      "amount_minor": 22302,
+      "currency": "EUR",
+      "placed_at": "2026-01-07T17:02:00Z"
+    },
+    "acme|AC-0107-0004": {
+      "customer_email": "gia109@example.com",
+      "amount_minor": 43963,
+      "currency": "EUR",
+      "placed_at": "2026-01-07T22:28:00Z"
+    },
+    "acme|AC-0107-0005": {
+      "customer_email": "dev523@example.com",
+      "amount_minor": 13424,
+      "currency": "USD",
+      "placed_at": "2026-01-07T10:24:00Z"
+    },
+    "acme|AC-0107-0006": {
+      "customer_email": "gia475@example.com",
+      "amount_minor": 58929,
+      "currency": "USD",
+      "placed_at": "2026-01-07T12:23:00Z"
+    },
+    "acme|AC-0107-0007": {
+      "customer_email": "hugo108@example.com",
+      "amount_minor": 45715,
+      "currency": "USD",
+      "placed_at": "2026-01-07T06:25:00Z"
+    },
+    "acme|AC-0107-0008": {
+      "customer_email": "ben119@example.com",
+      "amount_minor": 55022,
+      "currency": "EUR",
+      "placed_at": "2026-01-07T21:42:00Z"
+    },
+    "acme|AC-0107-0009": {
+      "customer_email": "finn467@example.com",
+      "amount_minor": 46156,
+      "currency": "USD",
+      "placed_at": "2026-01-07T11:19:00Z"
+    },
+    "acme|AC-0107-0010": {
+      "customer_email": "finn488@example.com",
+      "amount_minor": 68803,
+      "currency": "USD",
+      "placed_at": "2026-01-07T14:14:00Z"
+    },
+    "acme|AC-0107-0011": {
+      "customer_email": "lena464@example.com",
+      "amount_minor": 57931,
+      "currency": "USD",
+      "placed_at": "2026-01-07T18:19:00Z"
+    },
+    "acme|AC-0107-0012": {
+      "customer_email": "ava830@example.com",
+      "amount_minor": 9304,
+      "currency": "EUR",
+      "placed_at": "2026-01-07T11:07:00Z"
+    },
+    "acme|AC-0107-0013": {
+      "customer_email": "finn664@example.com",
+      "amount_minor": 3460,
+      "currency": "USD",
+      "placed_at": "2026-01-07T20:29:00Z"
+    },
+    "acme|AC-0107-0014": {
+      "customer_email": "chloe953@example.com",
+      "amount_minor": 89254,
+      "currency": "USD",
+      "placed_at": "2026-01-07T19:39:00Z"
+    },
+    "acme|AC-0107-0015": {
+      "customer_email": "iris164@example.com",
+      "amount_minor": 68132,
+      "currency": "USD",
+      "placed_at": "2026-01-07T08:58:00Z"
+    },
+    "acme|AC-0107-0016": {
+      "customer_email": "hugo238@example.com",
+      "amount_minor": 73880,
+      "currency": "EUR",
+      "placed_at": "2026-01-07T13:16:00Z"
+    },
+    "acme|AC-0107-0017": {
+      "customer_email": "chloe656@example.com",
+      "amount_minor": 83043,
+      "currency": "EUR",
+      "placed_at": "2026-01-07T09:08:00Z"
+    },
+    "acme|AC-0107-0018": {
+      "customer_email": "lena629@example.com",
+      "amount_minor": 52349,
+      "currency": "EUR",
+      "placed_at": "2026-01-07T06:29:00Z"
+    },
+    "acme|AC-0107-0019": {
+      "customer_email": "gia399@example.com",
+      "amount_minor": 59426,
+      "currency": "USD",
+      "placed_at": "2026-01-07T16:06:00Z"
+    },
+    "acme|AC-0107-0020": {
+      "customer_email": "ella771@example.com",
+      "amount_minor": 28653,
+      "currency": "USD",
+      "placed_at": "2026-01-07T09:30:00Z"
+    },
+    "acme|AC-0107-0021": {
+      "customer_email": "iris192@example.com",
+      "amount_minor": 76174,
+      "currency": "USD",
+      "placed_at": "2026-01-07T07:44:00Z"
+    },
+    "acme|AC-0107-0022": {
+      "customer_email": "hugo117@example.com",
+      "amount_minor": 43227,
+      "currency": "EUR",
+      "placed_at": "2026-01-07T09:21:00Z"
+    },
+    "acme|AC-0107-0023": {
+      "customer_email": "hugo541@example.com",
+      "amount_minor": 88410,
+      "currency": "EUR",
+      "placed_at": "2026-01-07T20:43:00Z"
+    },
+    "acme|AC-0107-0024": {
+      "customer_email": "jon402@example.com",
+      "amount_minor": 78746,
+      "currency": "EUR",
+      "placed_at": "2026-01-07T12:37:00Z"
+    },
+    "acme|AC-0107-0025": {
+      "customer_email": "hugo633@example.com",
+      "amount_minor": 46103,
+      "currency": "USD",
+      "placed_at": "2026-01-07T12:00:00Z"
+    },
+    "acme|AC-0107-0026": {
+      "customer_email": "ella941@example.com",
+      "amount_minor": 88788,
+      "currency": "USD",
+      "placed_at": "2026-01-07T18:02:00Z"
+    },
+    "acme|AC-0107-0027": {
+      "customer_email": "finn121@example.com",
+      "amount_minor": 88594,
+      "currency": "USD",
+      "placed_at": "2026-01-07T08:17:00Z"
+    },
+    "acme|AC-0107-0028": {
+      "customer_email": "chloe383@example.com",
+      "amount_minor": 40526,
+      "currency": "USD",
+      "placed_at": "2026-01-07T07:59:00Z"
+    },
+    "acme|AC-0107-0029": {
+      "customer_email": "gia611@example.com",
+      "amount_minor": 67454,
+      "currency": "USD",
+      "placed_at": "2026-01-07T12:37:00Z"
+    },
+    "acme|AC-0107-0030": {
+      "customer_email": "gia191@example.com",
+      "amount_minor": 75840,
+      "currency": "USD",
+      "placed_at": "2026-01-07T12:32:00Z"
+    },
+    "acme|AC-0107-0031": {
+      "customer_email": "lena942@example.com",
+      "amount_minor": 83796,
+      "currency": "EUR",
+      "placed_at": "2026-01-07T15:10:00Z"
+    },
+    "acme|AC-0107-0032": {
+      "customer_email": "hugo296@example.com",
+      "amount_minor": 73233,
+      "currency": "USD",
+      "placed_at": "2026-01-07T08:50:00Z"
+    },
+    "acme|AC-0107-0033": {
+      "customer_email": "hugo635@example.com",
+      "amount_minor": 25023,
+      "currency": "USD",
+      "placed_at": "2026-01-07T11:22:00Z"
+    },
+    "acme|AC-0107-0034": {
+      "customer_email": "ava497@example.com",
+      "amount_minor": 47559,
+      "currency": "USD",
+      "placed_at": "2026-01-07T22:14:00Z"
+    },
+    "acme|AC-0107-0035": {
+      "customer_email": "gia987@example.com",
+      "amount_minor": 26075,
+      "currency": "USD",
+      "placed_at": "2026-01-07T19:54:00Z"
+    },
+    "acme|AC-0107-0036": {
+      "customer_email": "hugo426@example.com",
+      "amount_minor": 54126,
+      "currency": "EUR",
+      "placed_at": "2026-01-07T17:41:00Z"
+    },
+    "acme|AC-0107-0037": {
+      "customer_email": "ben579@example.com",
+      "amount_minor": 64554,
+      "currency": "EUR",
+      "placed_at": "2026-01-07T08:51:00Z"
+    },
+    "acme|AC-0107-0038": {
+      "customer_email": "ava282@example.com",
+      "amount_minor": 29405,
+      "currency": "USD",
+      "placed_at": "2026-01-07T10:59:00Z"
+    },
+    "bolt|BO-0107-0000": {
+      "customer_email": "ben795@example.com",
+      "amount_minor": 11901,
+      "currency": "GBP",
+      "placed_at": "2026-01-07T13:29:00Z"
+    },
+    "bolt|BO-0107-0001": {
+      "customer_email": "lena603@example.com",
+      "amount_minor": 28009,
+      "currency": "USD",
+      "placed_at": "2026-01-07T19:50:00Z"
+    },
+    "bolt|BO-0107-0002": {
+      "customer_email": "jon648@example.com",
+      "amount_minor": 88600,
+      "currency": "JPY",
+      "placed_at": "2026-01-07T18:07:00Z"
+    },
+    "bolt|BO-0107-0003": {
+      "customer_email": "chloe804@example.com",
+      "amount_minor": 22255,
+      "currency": "GBP",
+      "placed_at": "2026-01-07T16:30:00Z"
+    },
+    "bolt|BO-0107-0004": {
+      "customer_email": "ava584@example.com",
+      "amount_minor": 27624,
+      "currency": "USD",
+      "placed_at": "2026-01-07T19:44:00Z"
+    },
+    "bolt|BO-0107-0005": {
+      "customer_email": "jon552@example.com",
+      "amount_minor": 70267,
+      "currency": "GBP",
+      "placed_at": "2026-01-07T10:47:00Z"
+    },
+    "bolt|BO-0107-0006": {
+      "customer_email": "lena300@example.com",
+      "amount_minor": 42921,
+      "currency": "USD",
+      "placed_at": "2026-01-07T22:42:00Z"
+    },
+    "bolt|BO-0107-0007": {
+      "customer_email": "iris922@example.com",
+      "amount_minor": 75569,
+      "currency": "GBP",
+      "placed_at": "2026-01-07T10:33:00Z"
+    },
+    "bolt|BO-0107-0008": {
+      "customer_email": "gia941@example.com",
+      "amount_minor": 14300,
+      "currency": "JPY",
+      "placed_at": "2026-01-07T22:25:00Z"
+    },
+    "bolt|BO-0107-0009": {
+      "customer_email": "kai130@example.com",
+      "amount_minor": 36849,
+      "currency": "USD",
+      "placed_at": "2026-01-07T20:47:00Z"
+    },
+    "bolt|BO-0107-0010": {
+      "customer_email": "lena330@example.com",
+      "amount_minor": 26000,
+      "currency": "JPY",
+      "placed_at": "2026-01-07T08:29:00Z"
+    },
+    "bolt|BO-0107-0011": {
+      "customer_email": "hugo146@example.com",
+      "amount_minor": 89135,
+      "currency": "USD",
+      "placed_at": "2026-01-07T12:42:00Z"
+    },
+    "bolt|BO-0107-0012": {
+      "customer_email": "gia385@example.com",
+      "amount_minor": 28000,
+      "currency": "JPY",
+      "placed_at": "2026-01-07T16:42:00Z"
+    },
+    "bolt|BO-0107-0013": {
+      "customer_email": "ben413@example.com",
+      "amount_minor": 10398,
+      "currency": "GBP",
+      "placed_at": "2026-01-07T16:48:00Z"
+    },
+    "bolt|BO-0107-0014": {
+      "customer_email": "finn466@example.com",
+      "amount_minor": 71600,
+      "currency": "JPY",
+      "placed_at": "2026-01-07T21:58:00Z"
+    },
+    "bolt|BO-0107-0015": {
+      "customer_email": "ava890@example.com",
+      "amount_minor": 43398,
+      "currency": "GBP",
+      "placed_at": "2026-01-07T15:55:00Z"
+    },
+    "bolt|BO-0107-0016": {
+      "customer_email": "hugo651@example.com",
+      "amount_minor": 75300,
+      "currency": "JPY",
+      "placed_at": "2026-01-07T22:35:00Z"
+    },
+    "bolt|BO-0107-0017": {
+      "customer_email": "iris408@example.com",
+      "amount_minor": 87500,
+      "currency": "JPY",
+      "placed_at": "2026-01-07T07:04:00Z"
+    },
+    "bolt|BO-0107-0018": {
+      "customer_email": "dev507@example.com",
+      "amount_minor": 56814,
+      "currency": "USD",
+      "placed_at": "2026-01-07T20:04:00Z"
+    },
+    "bolt|BO-0107-0019": {
+      "customer_email": "ella346@example.com",
+      "amount_minor": 42818,
+      "currency": "GBP",
+      "placed_at": "2026-01-07T20:08:00Z"
+    },
+    "bolt|BO-0107-0020": {
+      "customer_email": "hugo808@example.com",
+      "amount_minor": 13800,
+      "currency": "JPY",
+      "placed_at": "2026-01-07T15:39:00Z"
+    },
+    "bolt|BO-0107-0021": {
+      "customer_email": "ava48@example.com",
+      "amount_minor": 89963,
+      "currency": "GBP",
+      "placed_at": "2026-01-07T19:00:00Z"
+    },
+    "bolt|BO-0107-0022": {
+      "customer_email": "hugo17@example.com",
+      "amount_minor": 82574,
+      "currency": "USD",
+      "placed_at": "2026-01-07T19:22:00Z"
+    },
+    "bolt|BO-0107-0023": {
+      "customer_email": "hugo1@example.com",
+      "amount_minor": 21207,
+      "currency": "USD",
+      "placed_at": "2026-01-07T13:31:00Z"
+    },
+    "bolt|BO-0107-0024": {
+      "customer_email": "lena932@example.com",
+      "amount_minor": 27018,
+      "currency": "GBP",
+      "placed_at": "2026-01-07T22:59:00Z"
+    },
+    "bolt|BO-0107-0025": {
+      "customer_email": "chloe896@example.com",
+      "amount_minor": 85696,
+      "currency": "USD",
+      "placed_at": "2026-01-07T11:09:00Z"
+    },
+    "bolt|BO-0107-0026": {
+      "customer_email": "finn257@example.com",
+      "amount_minor": 12734,
+      "currency": "GBP",
+      "placed_at": "2026-01-07T17:10:00Z"
+    },
+    "bolt|BO-0107-0027": {
+      "customer_email": "kai170@example.com",
+      "amount_minor": 49238,
+      "currency": "USD",
+      "placed_at": "2026-01-07T17:20:00Z"
+    },
+    "bolt|BO-0107-0028": {
+      "customer_email": "ella744@example.com",
+      "amount_minor": 52449,
+      "currency": "USD",
+      "placed_at": "2026-01-07T16:40:00Z"
+    },
+    "bolt|BO-0107-0029": {
+      "customer_email": "ben721@example.com",
+      "amount_minor": 44400,
+      "currency": "JPY",
+      "placed_at": "2026-01-07T17:11:00Z"
+    },
+    "bolt|BO-0107-0030": {
+      "customer_email": "hugo80@example.com",
+      "amount_minor": 642,
+      "currency": "USD",
+      "placed_at": "2026-01-07T09:38:00Z"
+    },
+    "bolt|BO-0107-0031": {
+      "customer_email": "iris697@example.com",
+      "amount_minor": 78314,
+      "currency": "USD",
+      "placed_at": "2026-01-07T09:51:00Z"
+    },
+    "bolt|BO-0107-0032": {
+      "customer_email": "lena352@example.com",
+      "amount_minor": 1717,
+      "currency": "GBP",
+      "placed_at": "2026-01-07T06:08:00Z"
+    },
+    "cobalt|CO-0107-0000": {
+      "customer_email": "jon666@example.com",
+      "amount_minor": 74331,
+      "currency": "GBP",
+      "placed_at": "2026-01-07T06:08:00Z"
+    },
+    "cobalt|CO-0107-0001": {
+      "customer_email": "lena219@example.com",
+      "amount_minor": 58184,
+      "currency": "USD",
+      "placed_at": "2026-01-07T11:59:00Z"
+    },
+    "cobalt|CO-0107-0002": {
+      "customer_email": "gia631@example.com",
+      "amount_minor": 20340,
+      "currency": "GBP",
+      "placed_at": "2026-01-07T21:41:00Z"
+    },
+    "cobalt|CO-0107-0003": {
+      "customer_email": "dev89@example.com",
+      "amount_minor": 58484,
+      "currency": "GBP",
+      "placed_at": "2026-01-07T20:40:00Z"
+    },
+    "cobalt|CO-0107-0004": {
+      "customer_email": "ben604@example.com",
+      "amount_minor": 18851,
+      "currency": "USD",
+      "placed_at": "2026-01-07T18:50:00Z"
+    },
+    "cobalt|CO-0107-0005": {
+      "customer_email": "gia323@example.com",
+      "amount_minor": 50835,
+      "currency": "GBP",
+      "placed_at": "2026-01-07T11:59:00Z"
+    },
+    "cobalt|CO-0107-0006": {
+      "customer_email": "kai87@example.com",
+      "amount_minor": 32977,
+      "currency": "USD",
+      "placed_at": "2026-01-07T10:43:00Z"
+    },
+    "cobalt|CO-0107-0007": {
+      "customer_email": "jon739@example.com",
+      "amount_minor": 73034,
+      "currency": "USD",
+      "placed_at": "2026-01-07T16:15:00Z"
+    },
+    "cobalt|CO-0107-0008": {
+      "customer_email": "lena28@example.com",
+      "amount_minor": 37845,
+      "currency": "GBP",
+      "placed_at": "2026-01-07T19:17:00Z"
+    },
+    "cobalt|CO-0107-0009": {
+      "customer_email": "iris622@example.com",
+      "amount_minor": 40037,
+      "currency": "GBP",
+      "placed_at": "2026-01-07T09:30:00Z"
+    },
+    "cobalt|CO-0107-0010": {
+      "customer_email": "gia303@example.com",
+      "amount_minor": 25226,
+      "currency": "GBP",
+      "placed_at": "2026-01-07T18:45:00Z"
+    },
+    "cobalt|CO-0107-0011": {
+      "customer_email": "dev507@example.com",
+      "amount_minor": 7652,
+      "currency": "GBP",
+      "placed_at": "2026-01-07T19:22:00Z"
+    },
+    "cobalt|CO-0107-0012": {
+      "customer_email": "hugo654@example.com",
+      "amount_minor": 15277,
+      "currency": "EUR",
+      "placed_at": "2026-01-07T10:06:00Z"
+    },
+    "cobalt|CO-0107-0013": {
+      "customer_email": "ava370@example.com",
+      "amount_minor": 9807,
+      "currency": "GBP",
+      "placed_at": "2026-01-07T15:00:00Z"
+    },
+    "cobalt|CO-0107-0014": {
+      "customer_email": "jon431@example.com",
+      "amount_minor": 17799,
+      "currency": "EUR",
+      "placed_at": "2026-01-07T12:36:00Z"
+    },
+    "cobalt|CO-0107-0015": {
+      "customer_email": "chloe782@example.com",
+      "amount_minor": 72112,
+      "currency": "EUR",
+      "placed_at": "2026-01-07T17:39:00Z"
+    },
+    "cobalt|CO-0107-0016": {
+      "customer_email": "jon70@example.com",
+      "amount_minor": 10067,
+      "currency": "EUR",
+      "placed_at": "2026-01-07T06:17:00Z"
+    },
+    "cobalt|CO-0107-0017": {
+      "customer_email": "ava945@example.com",
+      "amount_minor": 34865,
+      "currency": "USD",
+      "placed_at": "2026-01-07T09:40:00Z"
+    },
+    "cobalt|CO-0107-0018": {
+      "customer_email": "ella644@example.com",
+      "amount_minor": 52663,
+      "currency": "USD",
+      "placed_at": "2026-01-07T14:38:00Z"
+    },
+    "cobalt|CO-0107-0019": {
+      "customer_email": "gia434@example.com",
+      "amount_minor": 66173,
+      "currency": "GBP",
+      "placed_at": "2026-01-07T19:05:00Z"
+    },
+    "cobalt|CO-0107-0020": {
+      "customer_email": "kai550@example.com",
+      "amount_minor": 53227,
+      "currency": "GBP",
+      "placed_at": "2026-01-07T07:24:00Z"
+    },
+    "cobalt|CO-0107-0021": {
+      "customer_email": "ella86@example.com",
+      "amount_minor": 81246,
+      "currency": "GBP",
+      "placed_at": "2026-01-07T08:36:00Z"
+    },
+    "cobalt|CO-0107-0022": {
+      "customer_email": "dev998@example.com",
+      "amount_minor": 10857,
+      "currency": "EUR",
+      "placed_at": "2026-01-07T14:43:00Z"
+    },
+    "cobalt|CO-0107-0023": {
+      "customer_email": "gia601@example.com",
+      "amount_minor": 70805,
+      "currency": "USD",
+      "placed_at": "2026-01-07T11:34:00Z"
+    },
+    "cobalt|CO-0107-0024": {
+      "customer_email": "kai68@example.com",
+      "amount_minor": 85675,
+      "currency": "GBP",
+      "placed_at": "2026-01-07T17:37:00Z"
+    },
+    "cobalt|CO-0107-0025": {
+      "customer_email": "dev60@example.com",
+      "amount_minor": 57842,
+      "currency": "EUR",
+      "placed_at": "2026-01-07T18:27:00Z"
+    },
+    "cobalt|CO-0107-0026": {
+      "customer_email": "gia119@example.com",
+      "amount_minor": 11800,
+      "currency": "USD",
+      "placed_at": "2026-01-07T21:46:00Z"
+    }
+  },
+  "late_files": [
+    "cobalt/cobalt_2026-01-04.csv"
+  ],
+  "duplicate_files": [
+    "acme/acme_2026-01-02_redelivery.csv"
+  ],
+  "broken_files": []
+}
