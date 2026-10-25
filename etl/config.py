@@ -77,12 +77,14 @@ def load_config(path: str) -> Dict[str, PartnerConfig]:
             doc = json.load(fh)
     except (OSError, json.JSONDecodeError) as e:
         raise ConfigError(f"cannot read config {path}: {e}")
-    partners = doc.get("partners")
+    partners = doc.get("partners") if isinstance(doc, dict) else None
     if not isinstance(partners, dict) or not partners:
         raise ConfigError("config needs a non-empty 'partners' object")
 
     out: Dict[str, PartnerConfig] = {}
     for name, p in partners.items():
+        if not isinstance(p, dict) or not isinstance(p.get("fields", {}), dict):
+            raise ConfigError(f"{name}: must be an object with a 'fields' object")
         glob = p.get("file_glob")
         if not glob or "{date}" not in glob:
             raise ConfigError(f"{name}: 'file_glob' is required and must contain {{date}}")
@@ -93,7 +95,7 @@ def load_config(path: str) -> Dict[str, PartnerConfig]:
         fields: Dict[str, Tuple[Alias, ...]] = {}
         for field in CANONICAL_FIELDS:
             aliases: List = p.get("fields", {}).get(field)
-            if not aliases:
+            if not aliases or not isinstance(aliases, list):
                 raise ConfigError(f"{name}: no aliases configured for required field '{field}'")
             fields[field] = tuple(_parse_alias(name, field, a) for a in aliases)
         extra = set(p.get("fields", {})) - set(CANONICAL_FIELDS)

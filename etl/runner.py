@@ -50,28 +50,28 @@ def _stats(run_id: str, partner: str, source_file, status: str, started: float, 
 def process_file(wh: Warehouse, partner: PartnerConfig, path: str, rel: str,
                  run_id: str, run_date: str, ingested_at: str, batch_size: int) -> dict:
     started = time.monotonic()
-    sha = sha256_file(path)
-    twin = wh.find_identical_file(partner.name, sha, rel)
-    if twin:
-        log.warning("%s is byte-identical to already-loaded %s; skipping", rel, twin)
-        return _stats(run_id, partner.name, rel, "skipped_duplicate", started,
-                      error=f"identical content to {twin}")
-
     rows_in = rows_out = rows_rejected = rows_changed = 0
     extra: List[str] = []
     try:
+        sha = sha256_file(path)  # inside the try: an unreadable file fails this file, not the run
+        twin = wh.find_identical_file(partner.name, sha, rel)
+        if twin:
+            log.warning("%s is byte-identical to already-loaded %s; skipping", rel, twin)
+            return _stats(run_id, partner.name, rel, "skipped_duplicate", started,
+                          error=f"identical content to {twin}")
         with open_rows(path) as (header, rows):
             resolved = resolve_header(header, partner, run_date)  # raises SchemaError pre-load
             extra = resolved.extra_columns
             wh.begin()
             wh.replace_rejects_for(rel)
+            wh.begin_stage()
             good: List[dict] = []
             bad: List[tuple] = []
 
             def flush_good():
-                nonlocal rows_out, rows_changed
+                nonlocal rows_out
                 if good:
-                    rows_changed += wh.upsert_orders(good)
+                    wh.stage_orders(good)
                     rows_out += len(good)
                     good.clear()
 
@@ -98,6 +98,7 @@ def process_file(wh: Warehouse, partner: PartnerConfig, path: str, rel: str,
                     flush_good()
             flush_good()
             flush_bad()
+            rows_changed = wh.merge_stage()
             wh.record_file_load(rel, partner.name, sha, os.path.getsize(path), run_id, ingested_at)
             wh.commit()
     except SchemaError as e:

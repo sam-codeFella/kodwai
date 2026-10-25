@@ -113,8 +113,13 @@ def _utc_string(dt: datetime, ctx: Ctx) -> str:
     return dt.strftime("%Y-%m-%dT%H:%M:%SZ")
 
 
+_OFFSET_NO_COLON_RE = re.compile(r"(?<=\d)([+-]\d{2})(\d{2})$")
+
+
 def parse_iso8601(raw, spec, ctx):
     s = raw[:-1] + "+00:00" if raw[-1] in "Zz" else raw
+    if ":" in s:  # Python 3.10's fromisoformat rejects '+0530'; many exporters emit it
+        s = _OFFSET_NO_COLON_RE.sub(r"\1:\2", s)
     try:
         return _utc_string(datetime.fromisoformat(s), ctx)
     except (ValueError, OverflowError):

@@ -9,7 +9,7 @@ python3 generate_samples.py                    # 3 partners x 7 days -> data/inb
 for d in 01 02 03 04 05 06 07; do python3 pipeline.py --run-date 2026-01-$d; done
 python3 generate_samples.py --deliver-late     # the withheld cobalt day-4 file finally arrives
 python3 pipeline.py --run-date 2026-01-04      # loads it; every other date can be re-run safely too
-python3 -m unittest discover -s tests -v       # 18 tests, stdlib only
+python3 -m unittest discover -s tests -v       # 151 tests, stdlib only, ~7s
 ```
 
 Python 3.10+, standard library only. Exit codes: `0` ok (a missing or duplicate file is *not* a
@@ -42,7 +42,9 @@ partner CSV -> reader (stream, resolve header) -> normalizer (row -> canonical |
 `INSERT ... ON CONFLICT DO UPDATE ... WHERE <a business column differs>`. Identical data touches
 zero rows, so `ingested_at`/`run_id` keep their first-load values: a re-run is a true no-op.
 Changed data updates the row in place. Each file loads in one transaction, so a crash leaves
-nothing half-written. A byte-identical file re-delivered under a *new name* is detected by sha256
+nothing half-written. Rows are staged in a disk-backed TEMP table and merged in one statement that
+keeps the *last* row per key, so a file that repeats a key with different content also re-runs as a
+true no-op instead of flipping the row (and its `run_id`) on every run. A byte-identical file re-delivered under a *new name* is detected by sha256
 and skipped (`skipped_duplicate`); the upsert is still the real guarantee.
 Rejects for a file are deleted and re-inserted inside that same transaction, so they mirror the
 file's current state instead of accumulating.
@@ -74,7 +76,7 @@ names), `reason`, `source_file`, `line_no`, `run_id`. Reasons: `missing_<field>`
 
 **5GB files.** The CSV is streamed row by row (`csv.reader`, never `list()`/`read()`), hashed in 1MB
 chunks, and flushed in 5,000-row batches inside the file transaction, so memory is O(batch), not
-O(file). `tests/test_pipeline.py::ScaleTests` loads 150k rows (9MB) with a ~3MB traced peak.
+O(file) (Python-side; staged rows live in SQLite's on-disk temp storage). `tests/test_pipeline.py::ScaleTests` loads 150k rows (9MB) with a ~3MB traced peak.
 
 **Adding a fourth partner.** Add an entry to `config/partners.json` (glob, timezone, aliases,
 parsers). No core change; `ExtensibilityTests` does exactly this. If a quirk can't be expressed,
@@ -87,6 +89,21 @@ add one function to `etl/parsers.py` and register it in `PARSERS`.
   are read in the partner's configured timezone (`UTC` or a fixed `UTC+HH:MM`).
 - Files live at `<inbox>/<partner>/<partner>_<date>*.csv`; the glob also picks up re-deliveries
   such as `acme_2026-01-02_redelivery.csv`.
-- Within a single file, `rows_changed` counts every insert/update, so a repeated key inside one
-  file with differing content counts twice; the final row is still correct.
+- Within a single file, a repeated key collapses to its last row before loading; the collapsed
+  rows show up in `rows_unchanged` (`rows_out` counts valid rows, `rows_changed` counts final rows
+  inserted or updated).
 - Data volume above SQLite's comfort zone would call for Postgres; only `etl/db.py` would change.
+
+## Tests
+
+`python3 -m unittest discover -s tests` (151 tests, stdlib only). They run against the real pipeline in temp dirs.
+
+| file | what it pins down |
+|---|---|
+| `test_pipeline.py` | core scenarios on the generated week: re-run, late/duplicate files, schema failure, scale |
+| `test_field_values.py` | every messy spelling of amount / timestamp / email / currency / id, per partner, incl. effective-dated unit changes |
+| `test_csv_edge_cases.py` | BOM, CRLF, quoting, multiline fields, odd headers, ragged rows, damaged/non-UTF8/NUL/giant-field files, missing inbox |
+| `test_idempotency.py` | re-runs, change detection, duplicate keys, stale-write guard, any-order day loading, batch boundaries, atomic rollback |
+| `test_config_and_reader.py` | config validation errors, timezone parsing, header resolution, parser corner cases |
+| `test_cli_and_generator.py` | exit codes and stdout/stderr contract; generator determinism and the documented drift schedule |
+| `test_fuzz_and_invariants.py` | seeded random garbage never crashes and every row is accounted for; canonical-contract checks; whole-week invariants |

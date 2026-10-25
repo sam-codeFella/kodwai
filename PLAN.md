@@ -159,3 +159,5 @@ Expected: no duplicate (partner, order_id) rows. Re-runs show `rows_changed=0`. 
 - **No per-partner `required` list**: all five canonical fields are required.
 - **Timezones** are `UTC` or fixed `UTC+HH:MM` (stdlib only, no tz database).
 - **`generate_samples.py --deliver-late`** moves the withheld file into the inbox for the late-arrival demo.
+- **Staged merge** (added while expanding tests): rows go to a disk-backed TEMP `stage` table and are merged once, keeping the last row per key. A fuzz test showed that a file repeating a key with different content flipped the stored row and its `run_id` on every re-run; staging makes that case a true no-op too.
+- **Hardening found by tests**: an unreadable file (e.g. a directory matching the glob) now fails that file instead of crashing the run; a non-object config raises `ConfigError`; ISO timestamps with `+0530`-style offsets are accepted.

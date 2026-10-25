@@ -72,15 +72,43 @@ CREATE TABLE IF NOT EXISTS partner_run_stats (
 );
 """
 
+# Rows of a file are first staged, then merged in one statement that keeps only the LAST
+# row per key. Without this, a file repeating a key with different content would flip the
+# stored row back and forth on every run (final data stable, run_id/ingested_at churning).
+# The staging table is a disk-backed TEMP table, so memory stays O(batch) for huge files.
+_STAGE_DDL = """
+CREATE TEMP TABLE stage (
+    seq            INTEGER PRIMARY KEY,
+    order_id       TEXT    NOT NULL,
+    partner        TEXT    NOT NULL,
+    customer_email TEXT    NOT NULL,
+    amount_minor   INTEGER NOT NULL,
+    currency       TEXT    NOT NULL,
+    placed_at      TEXT    NOT NULL,
+    ingested_at    TEXT    NOT NULL,
+    source_file    TEXT    NOT NULL,
+    run_id         TEXT    NOT NULL
+)
+"""
+
+_STAGE_INSERT = """
+INSERT INTO stage (order_id, partner, customer_email, amount_minor, currency,
+                   placed_at, ingested_at, source_file, run_id)
+VALUES (:order_id, :partner, :customer_email, :amount_minor, :currency,
+        :placed_at, :ingested_at, :source_file, :run_id)
+"""
+
 # The WHERE makes a re-load of identical data a true no-op (ingested_at / run_id keep
 # their first-load values). The source_file guard stops a late-arriving *older* file
 # from overwriting data already loaded from a *newer* one: file names embed the
 # business date (see file_glob), so they order chronologically within a partner.
-_UPSERT = """
+_MERGE = """
 INSERT INTO orders (order_id, partner, customer_email, amount_minor, currency,
                     placed_at, ingested_at, source_file, run_id)
-VALUES (:order_id, :partner, :customer_email, :amount_minor, :currency,
-        :placed_at, :ingested_at, :source_file, :run_id)
+SELECT order_id, partner, customer_email, amount_minor, currency,
+       placed_at, ingested_at, source_file, run_id
+FROM stage
+WHERE seq IN (SELECT max(seq) FROM stage GROUP BY partner, order_id)
 ON CONFLICT (partner, order_id) DO UPDATE SET
     customer_email = excluded.customer_email,
     amount_minor   = excluded.amount_minor,
@@ -103,6 +131,7 @@ class Warehouse:
         self.conn = sqlite3.connect(path, isolation_level=None, timeout=30)
         self.conn.execute("PRAGMA journal_mode=WAL")
         self.conn.execute("PRAGMA synchronous=NORMAL")
+        self.conn.execute("PRAGMA temp_store=FILE")  # staged rows spill to disk, never accumulate in RAM
         self.conn.executescript(SCHEMA)
 
     def close(self) -> None:
@@ -120,11 +149,20 @@ class Warehouse:
             self.conn.execute("ROLLBACK")
 
     # -- orders / rejects ---------------------------------------------------
-    def upsert_orders(self, rows: Sequence[dict]) -> int:
-        """Load a batch; returns rows inserted or actually changed (no-ops don't count)."""
+    def begin_stage(self) -> None:
+        self.conn.execute("DROP TABLE IF EXISTS temp.stage")
+        self.conn.execute(_STAGE_DDL)
+
+    def stage_orders(self, rows: Sequence[dict]) -> None:
+        self.conn.executemany(_STAGE_INSERT, rows)
+
+    def merge_stage(self) -> int:
+        """Upsert the staged rows (last row per key wins); returns rows inserted or actually changed."""
         before = self.conn.total_changes
-        self.conn.executemany(_UPSERT, rows)
-        return self.conn.total_changes - before
+        self.conn.execute(_MERGE)
+        changed = self.conn.total_changes - before
+        self.conn.execute("DROP TABLE temp.stage")
+        return changed
 
     def replace_rejects_for(self, source_file: str) -> None:
         """Rejects mirror the current state of the file, so re-runs never pile up duplicates."""
