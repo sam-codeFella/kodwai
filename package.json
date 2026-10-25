@@ -1,0 +1,5 @@
+{
+  "name": "kodwai-idempotent-etl-pipeline-with-schema-drift",
+  "version": "1.0.0",
+  "private": true
+}
